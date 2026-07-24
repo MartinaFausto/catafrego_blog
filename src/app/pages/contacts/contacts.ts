@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-contacts',
-  imports: [TranslatePipe],
+  imports: [TranslatePipe, NgClass],
   templateUrl: './contacts.html',
   styleUrl: './contacts.scss',
 })
@@ -12,6 +13,7 @@ export class Contacts {
   contacts = [
     {
         name: 'Email',
+        mobileValue: 'catafrego94\n@gmail.com',
         value: 'catafrego94@gmail.com',
         icon: 'assets/icons/maildotru.svg',
         link: 'mailto:catafrego94@gmail.com'
