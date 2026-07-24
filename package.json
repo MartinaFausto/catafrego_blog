@@ -5,7 +5,8 @@
     "ng": "ng",
     "set_env": "node scripts/set-env.js",
     "start": "ng serve",
-    "build": "node scripts/set-env.js && ng build",
+    "build": "ng build",
+    "build:prod": "npm run set_env && ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "license": "node scripts/set-primeng-license.js"
