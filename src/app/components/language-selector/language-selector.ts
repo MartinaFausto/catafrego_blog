@@ -2,7 +2,7 @@ import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { SelectModule } from 'primeng/select';
 import { TranslateUtility } from '../../utils/translate-utility';
-import { LANGUAGE_CODES, SETTED_LANGUAGE } from '../../utils/translate-utility';
+import { LANGUAGE_CODES, getInitialLanguage } from '../../utils/translate-utility';
 
 interface Language {
   label: string;
@@ -30,7 +30,7 @@ export class LanguageSelector {
   ];
   
   selectedLanguage: Language = this.languages.find(
-    lang => lang.code === SETTED_LANGUAGE
+    lang => lang.code === getInitialLanguage()
   )!;
   
   changeLanguage(language: Language) {
