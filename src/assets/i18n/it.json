@@ -38,7 +38,8 @@
         "CONTACTS": "Contatti"
     },
     "HOME": {
-        "HELLO": "Ciao, sono Catalina!"
+        "HELLO": "Ciao, sono Catalina!",
+        "MY_STORY": "La mia storia"
     },
     "SKILL": {
         "TREK": "Conduzione trekking giornalieri e multi-day",
