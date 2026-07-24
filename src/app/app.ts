@@ -11,7 +11,7 @@ import { Header } from './components/header/header';
 })
 
 export class App {
-  protected readonly title = signal('blogV1');
+  protected readonly title = signal('Catalina Fregonese');
 
   private initLanguage = inject(TranslateUtility).initLanguage();
 }
