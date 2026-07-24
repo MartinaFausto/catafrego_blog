@@ -1,5 +1,6 @@
 import { Injectable, inject } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { firstValueFrom } from 'rxjs';
 
 export const LANGUAGE_CODES = {
   IT: 'it',
@@ -10,7 +11,15 @@ export const LANGUAGE_CODES = {
   FR: 'fr'
 } as const;
 
-export const SETTED_LANGUAGE = LANGUAGE_CODES.IT;
+export function getBrowserLanguage() {
+  const browserLang = navigator.language.split('-')[0];
+
+  return Object.values(LANGUAGE_CODES).includes(browserLang as any)
+    ? browserLang
+    : LANGUAGE_CODES.IT;
+}
+
+export const SETTED_LANGUAGE = getBrowserLanguage();
 
 @Injectable({
   providedIn: 'root'
@@ -21,7 +30,10 @@ export class TranslateUtility {
 
   initLanguage() {
     this.translate.setFallbackLang(SETTED_LANGUAGE);
-    this.translate.use(SETTED_LANGUAGE);
+
+    return firstValueFrom(
+      this.translate.use(SETTED_LANGUAGE)
+    );
   }
 
   changeLanguage(language: string) {
