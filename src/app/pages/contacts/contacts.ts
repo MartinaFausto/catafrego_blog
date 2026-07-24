@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
-import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-contacts',
-  imports: [TranslatePipe, NgClass],
+  imports: [TranslatePipe],
   templateUrl: './contacts.html',
   styleUrl: './contacts.scss',
 })

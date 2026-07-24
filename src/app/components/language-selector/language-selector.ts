@@ -1,6 +1,5 @@
 import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { TranslatePipe } from '@ngx-translate/core';
 import { SelectModule } from 'primeng/select';
 import { TranslateUtility } from '../../utils/translate-utility';
 import { LANGUAGE_CODES, SETTED_LANGUAGE } from '../../utils/translate-utility';
@@ -12,7 +11,7 @@ interface Language {
 
 @Component({
   selector: 'app-language-selector',
-  imports: [FormsModule, SelectModule, TranslatePipe],
+  imports: [FormsModule, SelectModule],
   templateUrl: './language-selector.html',
   styleUrl: './language-selector.scss',
 })
