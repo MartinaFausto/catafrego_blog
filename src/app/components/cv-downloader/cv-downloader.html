@@ -1,0 +1,20 @@
+<p-button
+    type="button"
+    pButton
+    icon="pi pi-download"
+    [label]="'DOWNLOAD_CV' | translate"
+    (click)="menu.toggle($event)">
+</p-button>
+
+<p-tieredmenu #menu [model]="items" [popup]="true">
+    <ng-template #item let-item>
+        <div class="flex items-center gap-2">
+        <img
+            [src]="'assets/flags/'+item.icon+'.gif'"
+            class="w-5 h-5"
+            [alt]="item.label">
+
+        <span>{{ 'LANGUAGE.' + item.label | translate }}</span>
+        </div>
+    </ng-template>
+</p-tieredmenu>

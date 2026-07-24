@@ -1,0 +1,260 @@
+<section class="relative">
+
+    <!-- Copertina -->
+    <div class="h-[45vh] md:h-[55vh] overflow-hidden">
+
+        <img
+            src="assets/imgs/copertina.jpg"
+            alt="Copertina"
+            class="w-full h-full object-cover">
+
+    </div>
+
+</section>
+
+<main class="max-w-5xl mx-auto px-4 sm:px-6">
+
+    <section class="py-12">
+        <div class="text-center">
+            <h2 class="text-3xl font-bold">
+                Certificazioni e Formazione Outdoor
+            </h2>
+
+            <p class="mt-4 text-lg text-surface-600 max-w-3xl mx-auto leading-relaxed">
+                Percorsi formativi e competenze acquisite nell'ambito della sicurezza,
+                dell'escursionismo e dell'educazione in ambiente naturale.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="flex justify-center">
+        <app-cv-downloader></app-cv-downloader>
+    </section>
+
+</main>
+
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto items-stretch">
+
+    @for (certification of certifications; track certification.title) {
+
+        <p-card
+            styleClass="h-full flex flex-col">
+
+            <ng-template #title>
+                <div class="flex items-center gap-2">
+                    <i [class]="certification.icon"></i>
+                    <span>{{ certification.title }}</span>
+                </div>
+            </ng-template>
+
+
+            <div class="flex flex-col flex-1">
+
+                <!-- Descrizione -->
+                <p class="text-sm leading-relaxed">
+                    {{ certification.description }}
+                </p>
+
+
+                <!-- Punti chiave -->
+                <div class="flex flex-col gap-2 mt-5">
+
+                    @for (point of certification.points; track point) {
+
+                        <div class="flex items-start gap-2">
+                            <i class="pi pi-check-circle mt-1"></i>
+                            <span>{{ point }}</span>
+                        </div>
+
+                    }
+
+                </div>
+
+
+                <!-- Spazio elastico + footer -->
+                <div class="mt-auto pt-6">
+
+                    <div class="flex flex-col sm:flex-row justify-between items-center gap-3">
+
+                        <p-tag
+                            [value]="certification.language"
+                            severity="secondary">
+                        </p-tag>
+
+
+                        <a
+                            [href]="certification.document"
+                            target="_blank"
+                            class="p-button p-button-sm w-full sm:w-auto justify-center">
+
+                            <i class="pi pi-download mr-2"></i>
+                            Documento
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </p-card>
+
+    }
+
+</div>
+
+<p-divider
+    class="hidden md:flex">
+</p-divider>
+
+<div class="flex flex-col md:flex-row justify-center gap-6">
+    
+
+    <!-- Colonna sinistra -->
+    <div class="flex flex-col gap-6 w-full md:w-1/3">
+
+        <p-card
+            header="Skills"
+            class="w-full">
+
+            <div class="flex flex-wrap gap-2">
+                @for (skill of technicalSkills; track skill.label) {
+                    <p-tag [severity]="skill.severity">
+                        <i [class]="skill.icon"></i>
+                        <span>{{ 'SKILL.' + skill.label | translate }}</span>
+                    </p-tag>
+                }
+            </div>
+
+        </p-card>
+
+
+        <p-divider></p-divider>
+
+
+        <p-card
+            header="My approach"
+            class="w-full">
+
+            <p>
+                Credo nell'importanza dell'educazione outdoor,
+                della sicurezza in ambiente naturale e della
+                condivisione delle conoscenze attraverso esperienze pratiche.
+            </p>
+
+        </p-card>
+
+    </div>
+
+
+    <!-- Divider verticale solo desktop -->
+    <p-divider
+        layout="vertical"
+        class="hidden md:flex">
+    </p-divider>
+
+    
+    <p-card
+        class="max-w-sm w-full min-h-[350px]"
+        header="Outdoor Education">
+
+        <ng-template #header>
+            <img
+                src="assets/imgs/maps.jpeg"
+                alt="Bambini che imparano cartografia"
+                class="w-full h-100 object-cover rounded-t-lg">
+        </ng-template>
+
+    </p-card>
+
+</div>
+
+<p-divider
+    class="hidden md:flex">
+</p-divider>
+
+<div class="flex flex-col md:flex-row justify-center gap-6">
+    
+    <p-card>
+        <ng-template #title>
+            <div class="flex items-center gap-2">
+                <span>{{ 'LANGUAGES' | translate }}</span>
+                <i class="pi pi-language"></i>
+            </div>
+        </ng-template>
+
+        <div class="flex flex-col gap-4">
+
+            @for (language of languages; track language.label) {
+
+                <div class="max-w-sm w-full text-sm">
+                    <div class="flex items-center justify-between gap-8">
+                        <span class="text-color font-medium">{{ 'LANGUAGE.' + language.label | translate }}</span>
+                        <span class="text-color">{{ 'LANGUAGE_LEVEL.' + language.level | translate }}</span>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </p-card>
+
+    <!-- Divider verticale solo desktop -->
+    <p-divider
+        layout="vertical"
+        class="hidden md:flex">
+    </p-divider>
+
+    <p-card>
+        <ng-template #title>
+            <div class="flex items-center gap-2">
+                <span>{{ 'MOBILITY' | translate }}</span>
+                <i class="pi pi-car"></i>
+            </div>
+        </ng-template>
+
+        <div class="flex flex-col gap-4">
+
+                <div class="max-w-sm w-full text-sm">
+                    <div class="flex items-center justify-between gap-8">
+                        <span class="text-color font-medium">{{ 'DRIVING_LICENCE.TITLE' | translate }}</span>
+                        <span class="text-color">{{ 'DRIVING_LICENCE.LICENCE' | translate }}</span>
+                    </div>
+                </div>
+
+        </div>
+    </p-card>
+
+    <!-- Divider verticale solo desktop -->
+    <p-divider
+        layout="vertical"
+        class="hidden md:flex">
+    </p-divider>
+
+    <p-card>
+        <ng-template #title>
+            <div class="flex items-center gap-2">
+                <span>{{ 'DOCUMENTS' | translate }}</span>
+                <i class="pi pi-globe"></i>
+            </div>
+        </ng-template>
+
+        <div class="flex flex-col gap-4">
+
+            @for (language of languages; track language.label) {
+
+                <div class="max-w-sm w-full text-sm">
+                    <div class="flex items-center justify-between gap-8">
+                        <span class="text-color font-medium">{{ 'LANGUAGE.' + language.label | translate }}</span>
+                        <span class="text-color">{{ 'LANGUAGE_LEVEL.' + language.level | translate }}</span>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </p-card>
+</div>
+
+<p-divider/>

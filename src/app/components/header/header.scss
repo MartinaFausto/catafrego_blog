@@ -1,0 +1,10 @@
+p-toolbar {
+  background: rgba(255,255,255,0.10);
+  backdrop-filter: blur(12px);
+  transition: all .3s ease;
+}
+
+p-toolbar.scrolled {
+  background: rgba(15, 23, 42, 0.95);
+  box-shadow: 0 10px 30px rgba(0,0,0,.15);
+}

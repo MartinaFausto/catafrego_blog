@@ -1,0 +1,55 @@
+{
+    "LANGUAGES": "Lingue parlate",
+    "MOBILITY": "Mobilità",
+    "DOCUMENTS": "Documenti",
+    "DRIVING_LICENCE": {
+        "TITLE": "Driving Licence",
+        "LICENCE": "European Category B"
+    },
+    "LANGUAGE": {
+        "EN": "Inglese",
+        "ES": "Spagnolo",
+        "IT": "Italiano",
+        "DE": "Tedesco",
+        "PT": "Portoghese",
+        "FR": "Francese"
+    },
+    "LANGUAGE_LEVEL":{
+        "A1": "Principiante",
+        "A2": "Elementare",
+        "B1": "Intermedio",
+        "B2": "Intermedio avanzato",
+        "C1": "Avanzato",
+        "C2": "Padronanza della lingua",
+        "N": "Madrelingua"
+    },
+    "DOWNLOAD_CV": "Scarica CV",
+    "COUNTERS": {
+        "1": "Anni Outdoor",
+        "2": "km percorsi",
+        "3": "Escursioni",
+        "4": "Qualifiche"
+    },
+    "PAGES": {
+        "HOME": "Home",
+        "WORK_EXPERIENCE": "Esperienze lavorative",
+        "SKILLS": "Skills e Qualifiche",
+        "DIARY": "Foto diario",
+        "CONTACTS": "Contatti"
+    },
+    "HOME": {
+        "HELLO": "Ciao, sono Catalina!"
+    },
+    "SKILL": {
+        "TREK": "Conduzione trekking giornalieri e multi-day",
+        "PLAN": "Pianificazione itinerari",
+        "RISK": "Gestione del rischio in ambiente montano",
+        "MAP": "Orientamento e cartografia",
+        "LEADER": "Leadership gruppi internazionali",
+        "EM": "Gestione emergenze"
+    },
+    "CONTACTS": {
+        "TITLE": "Costruiamo insieme nuove esperienze outdoor",
+        "SUBTITLE": "Contattami per collaborazioni, progetti outdoor ed esperienze in ambiente naturale."
+    }
+}

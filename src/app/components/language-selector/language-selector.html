@@ -1,0 +1,27 @@
+<p-select
+    [options]="languages"
+    [(ngModel)]="selectedLanguage"
+    (onChange)="changeLanguage($event.value)"
+    filterBy="label"
+    [checkmark]="true"
+    placeholder="Select a language"
+    class="w-full md:w-20"
+    [pt]="{ option: { class: 'flex-row-reverse justify-between' } }"
+>
+    
+<ng-template #item let-language>
+  <div class="flex items-center gap-2">
+    <img [src]="'assets/flags/' + language.code + '.gif'" width="20" height="15">
+    <!--<span>{{ "LANGUAGE." + language.label | translate }}</span>-->
+  </div>
+</ng-template>
+
+<ng-template #selectedItem let-selectedOption>
+  <div class="flex items-center gap-2">
+    <img [src]="'assets/flags/' + selectedOption.code + '.gif'" width="20" height="15">
+    <!--<span>{{ "LANGUAGE." + selectedOption.label | translate }}</span>-->
+  </div>
+</ng-template>
+
+
+</p-select>

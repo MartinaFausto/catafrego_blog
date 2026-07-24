@@ -1,0 +1,63 @@
+<section class="h-full w-full relative overflow-hidden">
+
+    <!-- Immagine sfondo -->
+    <img
+        src="assets/imgs/contacts.jpg"
+        alt="Sentiero in montagna"
+        class="absolute inset-0 w-full h-full object-cover">
+
+
+    <!-- Overlay opaco -->
+    <div class="absolute inset-0 bg-black/50"></div>
+
+
+    <!-- Contenuto -->
+    <div class="relative z-10 h-full flex items-center justify-center text-center px-6">
+
+        <div class="text-white max-w-4xl">
+
+            <h1 class="text-5xl md:text-7xl font-bold">
+                {{ 'CONTACTS.TITLE' | translate }}
+            </h1>
+
+            <p class="mt-8 text-xl md:text-2xl">
+                {{ 'CONTACTS.SUBTITLE' | translate }}
+            </p>
+
+
+            <div class="flex flex-wrap justify-center gap-10 mt-12">
+
+                @for (contact of contacts; track contact.name) {
+
+                    <div class="flex flex-col items-center text-white w-full sm:w-48">
+
+                        <a
+                            [href]="contact.link"
+                            target="_blank"
+                            class="w-16 h-16 rounded-full bg-white/20 backdrop-blur
+                                   flex items-center justify-center
+                                   hover:bg-white/40 transition">
+
+                            <img
+                                [src]="contact.icon"
+                                [alt]="contact.name"
+                                class="w-8 h-8 invert">
+
+                        </a>
+
+
+                        <span class="mt-3 text-sm text-center whitespace-nowrap">
+                            {{ contact.value }}
+                        </span>
+
+                    </div>
+
+                }
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

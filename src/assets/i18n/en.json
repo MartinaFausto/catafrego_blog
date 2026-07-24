@@ -1,0 +1,40 @@
+{
+    "LANGUAGES": "Spoken languages",
+    "LANGUAGE": {
+        "EN": "English",
+        "ES": "Spanish",
+        "IT": "Italian",
+        "DE": "German",
+        "PT": "Portuguese",
+        "FR": "French"
+    },
+    "LANGUAGE_LEVEL": {
+        "A1": "Beginner",
+        "A2": "Elementary",
+        "B1": "Intermediate",
+        "B2": "Upper-intermediate",
+        "C1": "Advanced",
+        "C2": "Language proficiency",
+        "N": "Native language"
+    },
+    "DOWNLOAD_CV": "Download CV",
+    "PAGES": {
+        "HOME": "Home",
+        "WORK_EXPERIENCE": "Work Experience",
+        "SKILLS": "Skills and Qualifications",
+        "DIARY": "Photo Diary",
+        "CONTACTS": "Contact"
+    },
+    "SKILL": {
+        "TREK": "Leading daily and multi-day treks",
+        "PLAN": "Itinerary planning",
+        "RISK": "Risk management in mountain environments",
+        "MAP": "Navigation and cartography",
+        "LEADER": "Leadership of international groups",
+        "EM": "Emergency management"
+    },
+    "CONTACTS": {
+        "TITLE": "Let's build new outdoor experiences together",
+        "SUBTITLE": "Contact me for collaborations, outdoor projects and experiences in natural environments."
+    }
+}

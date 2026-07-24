@@ -1,0 +1,119 @@
+<div
+    class="fixed top-5 left-1/2 -translate-x-1/2 z-50
+           w-[calc(100%-2rem)] max-w-5xl
+           rounded-full
+           border border-white/20
+           backdrop-blur-xl
+           transition-all duration-300"
+    [ngClass]="scrolled 
+        ? 'bg-slate-900/90 shadow-xl' 
+        : 'bg-white/10'">
+
+
+    <div class="flex items-center justify-between px-6 py-3">
+
+
+        <!-- Logo -->
+        <a
+            routerLink="/"
+            class="bg-white rounded-full px-4 py-2
+                text-green-600
+                text-xl font-bold tracking-wide
+                whitespace-nowrap cursor-pointer
+                transition-all duration-300
+                hover:scale-105">
+
+            Catalina Fregonese
+
+        </a>
+
+
+        <!-- Menu desktop -->
+        <div class="hidden md:flex items-center gap-1">
+
+            @for (link of links; track link.route) {
+
+                <button
+                    pButton
+                    variant="text"
+                    size="small"
+                    [routerLink]="link.route"
+                    class="text-white! hover:bg-white/10! text-base! font-medium!">
+
+                    {{ "PAGES." + link.label | translate }}
+
+                </button>
+
+            }
+
+        </div>
+
+
+        <!-- Lingua desktop -->
+        <div class="hidden md:block">
+            <app-language-selector></app-language-selector>
+        </div>
+
+
+        <!-- Burger mobile -->
+        <div class="block md:hidden">
+
+            <button
+                pButton
+                variant="text"
+                class="text-white!"
+                (click)="menuOpen = !menuOpen">
+
+                <i class="pi pi-bars text-xl"></i>
+
+            </button>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- Menu mobile -->
+    @if(menuOpen) {
+
+        <div
+            class="absolute top-full left-0 mt-3
+                   w-full
+                   rounded-3xl
+                   bg-slate-900/95
+                   backdrop-blur-xl
+                   border border-white/20
+                   p-4
+                   flex flex-col gap-2
+                   md:hidden">
+
+
+            @for (link of links; track link.route) {
+
+                <button
+                    pButton
+                    variant="text"
+                    size="small"
+                    [routerLink]="link.route"
+                    (click)="menuOpen = false"
+                    class="text-white! justify-start!">
+
+                    {{ "PAGES." + link.label | translate }}
+
+                </button>
+
+            }
+
+
+            <div class="mt-3">
+                <app-language-selector></app-language-selector>
+            </div>
+
+
+        </div>
+
+    }
+
+
+</div>

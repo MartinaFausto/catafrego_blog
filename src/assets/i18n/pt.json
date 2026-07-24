@@ -1,0 +1,40 @@
+{
+    "LANGUAGES": "Línguas faladas",
+    "LANGUAGE": {
+        "EN": "Inglês",
+        "ES": "Espanhol",
+        "IT": "Italiano",
+        "DE": "Alemão",
+        "PT": "Português",
+        "FR": "Francês"
+    },
+    "LANGUAGE_LEVEL": {
+        "A1": "Iniciante",
+        "A2": "Elementar",
+        "B1": "Intermédio",
+        "B2": "Intermédio avançado",
+        "C1": "Avançado",
+        "C2": "Domínio da língua",
+        "N": "Língua materna"
+    },
+    "DOWNLOAD_CV": "Descarregar CV",
+    "PAGES": {
+        "HOME": "Início",
+        "WORK_EXPERIENCE": "Experiência profissional",
+        "SKILLS": "Competências e Qualificações",
+        "DIARY": "Diário fotográfico",
+        "CONTACTS": "Contactos"
+    },
+    "SKILL": {
+        "TREK": "Condução de trekking diários e de vários dias",
+        "PLAN": "Planeamento de itinerários",
+        "RISK": "Gestão de risco em ambiente de montanha",
+        "MAP": "Orientação e cartografia",
+        "LEADER": "Liderança de grupos internacionais",
+        "EM": "Gestão de emergências"
+    },
+    "CONTACTS": {
+        "TITLE": "Vamos construir juntos novas experiências outdoor",
+        "SUBTITLE": "Contacta-me para colaborações, projetos outdoor e experiências em ambiente natural."
+    }
+}
