@@ -55,28 +55,25 @@
         </div>
 
 
-        <!-- Burger mobile -->
-        <div class="block md:hidden">
+<!-- Burger mobile -->
+<div class="block md:hidden">
 
-            <button
-                pButton
-                variant="text"
-                [style.webkitTapHighlightColor]="'transparent'"
-                class=
-                    "text-white! 
-                    focus:bg-transparent!
-                    active:bg-transparent!
-                    hover:bg-transparent!"
-                (click)="menuOpen = !menuOpen">
+    <button
+        type="button"
+        [style.webkitTapHighlightColor]="'transparent'"
+        class="text-white bg-transparent border-none p-2 rounded-lg
+               hover:bg-transparent active:bg-transparent focus:bg-transparent
+               outline-none focus:outline-none focus:ring-0 shadow-none cursor-pointer"
+        (click)="menuOpen = !menuOpen">
 
-                <i
-                    class="text-xl"
-                    [ngClass]="menuOpen ? 'pi pi-times' : 'pi pi-bars'">
-                </i>
+        <i
+            class="text-xl text-white block pointer-events-none"
+            [ngClass]="menuOpen ? 'pi pi-times' : 'pi pi-bars'">
+        </i>
 
-            </button>
+    </button>
 
-        </div>
+</div>
 
 
     </div>
