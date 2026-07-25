@@ -63,7 +63,8 @@ export class MapsWork implements AfterViewInit, OnDestroy {
         am5.Circle.new(this.root, {
           radius: 10,
           fill: am5.color(0x22c55e),
-          opacity: 0.4
+          opacity: 0.4,
+          interactive: false
         })
       );
 
@@ -71,7 +72,8 @@ export class MapsWork implements AfterViewInit, OnDestroy {
         am5.Circle.new(this.root, {
           radius: 5,
           fill: am5.color(0x16a34a),
-          tooltipText: "{title}"
+          tooltipText: "{title}",
+          interactive: true
         })
       );
 
