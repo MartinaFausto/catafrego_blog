@@ -27,8 +27,8 @@ export class MapsWork implements AfterViewInit, OnDestroy {
     // 1. Creazione della mappa con trascinamento e sensibilità zoom
     const chart = this.root.container.children.push(
       am5map.MapChart.new(this.root, {
-        projection: am5map.geoNaturalEarth1(),
-        panX: "rotateX",
+        projection: am5map.geoMercator(), // <-- Mappa completamente piatta!
+        panX: "translateX",               // Cambia da "rotateX" a "translateX" per lo scorrimento piatto
         panY: "translateY",
         wheelSensitivity: 0.7
       })
