@@ -1,4 +1,5 @@
 #argentinaMap {
     width: 100%;
     height: 450px;
+    touch-action: none; /* Riserva tutti i gesti touch esclusivamente ad amCharts */
 }
