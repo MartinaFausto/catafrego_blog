@@ -1,16 +1,2 @@
 @import "tailwindcss";
 @import "primeicons/primeicons.css";
-
-/* Disabilita il doppio tap e le gesture nativi su tutto il sito */
-html, body {
-  touch-action: manipulation;
-  -webkit-text-size-adjust: 100%;
-  overflow-x: hidden;
-  width: 100%;
-}
-
-/* FONDAMENTALE PER SAFARI: Evita lo zoom automatico al tap sugli input/pulsanti */
-input, select, textarea, button {
-  font-size: 16px !important; /* Se < 16px iOS zooma sempre la pagina */
-  touch-action: manipulation;
-}
