@@ -1,2 +1,7 @@
 @import "tailwindcss";
 @import "primeicons/primeicons.css";
+
+html, body {
+  /* Impedisce il doppio tap per zoomare e gestisce i gesti al 100% via CSS */
+  touch-action: manipulation;
+}
