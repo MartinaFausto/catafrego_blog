@@ -32,12 +32,11 @@
         <app-cv-downloader></app-cv-downloader>
     </section>
 
-</main>
+    <br><br>
 
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
 
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto items-stretch">
-
-    @for (certification of certifications; track certification.title) {
+        @for (certification of certifications; track certification.title) {
 
         <p-card
             styleClass="h-full flex flex-col">
@@ -102,13 +101,12 @@
 
         </p-card>
 
-    }
+        }
 
-</div>
+    </div>
 
-<p-divider
-    class="hidden md:flex">
-</p-divider>
+</main>
+
 
 <div class="flex flex-col md:flex-row justify-center gap-6">
     
