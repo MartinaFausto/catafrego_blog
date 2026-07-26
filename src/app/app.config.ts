@@ -6,8 +6,9 @@ import Aura from '@primeuix/themes/aura';
 import { provideTranslateService } from '@ngx-translate/core';
 import { provideTranslateHttpLoader } from '@ngx-translate/http-loader';
 import { environment } from '../environments/environment.local';
-import { provideAppInitializer, inject } from '@angular/core';
+import { provideAppInitializer, inject, isDevMode } from '@angular/core';
 import { TranslateUtility } from '../app/utils/translate-utility';
+import { provideServiceWorker } from '@angular/service-worker';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -38,6 +39,9 @@ export const appConfig: ApplicationConfig = {
       const translateUtility = inject(TranslateUtility);
 
       return translateUtility.initLanguage();
-    })
+    }), provideServiceWorker('ngsw-worker.js', {
+            enabled: !isDevMode(),
+            registrationStrategy: 'registerWhenStable:30000'
+          })
   ]
 };
