@@ -11,7 +11,9 @@ const ICONS = {
   HIKING: 'hiking',
   SKI: 'ski',
   CLIMBING: 'climbing',
-  BIKE: 'bike'
+  BIKE: 'bike',
+  HOCKEY: 'hockey',
+  ROLLER: 'roller'
 } as const;
 
 const MONTHS = {
@@ -28,6 +30,11 @@ const MONTHS = {
   NOV: 'NOV',
   DEC: 'DEC'
 } as const;
+
+const WORK = {
+    SKI: 'SKI',
+    ENTRENADORA: 'ENTRENADORA'
+}
 
 @Component({
   selector: 'app-timeline',
@@ -54,11 +61,10 @@ export class Timeline {
                     url: 'https://www.ordinoarcalis.com'
                 }  
             ],
-            description: 'Your order #12345 has been confirmed and is being prepared for processing.',
-            details: ['2x Wireless Headphones', '1x Phone Case', '1x USB-C Cable']
+            details: []
         },
         {
-            status: 'Order Placed',
+            status: WORK.SKI,
             startMonth: MONTHS.NOV,
             startYear: 2025,
             endMonth: MONTHS.APR,
@@ -77,8 +83,7 @@ export class Timeline {
                     url: 'https://www.ordinoarcalis.com'
                 }  
             ],
-            description: 'Your order #12345 has been confirmed and is being prepared for processing.',
-            details: ['2x Wireless Headphones', '1x Phone Case', '1x USB-C Cable']
+            details: []
         },
         {
             status: 'Guida',
@@ -96,8 +101,7 @@ export class Timeline {
                     url: 'https://www.altitude-camps.com/'
                 }
             ],
-            description: 'Your order #12345 has been confirmed and is being prepared for processing.',
-            details: ['2x Wireless Headphones', '1x Phone Case', '1x USB-C Cable']
+            details: []
         },
         {
             status: 'Guida',
@@ -113,8 +117,7 @@ export class Timeline {
                     url: 'https://www.grandvalira.com'
                 }
             ],
-            description: 'Your order #12345 has been confirmed and is being prepared for processing.',
-            details: ['2x Wireless Headphones', '1x Phone Case', '1x USB-C Cable']
+            details: []
         },
         {
             status: 'Guida',
@@ -132,8 +135,7 @@ export class Timeline {
                     url: 'https://www.altitude-camps.com/'
                 }
             ],
-            description: 'Your order #12345 has been confirmed and is being prepared for processing.',
-            details: ['2x Wireless Headphones', '1x Phone Case', '1x USB-C Cable']
+            details: []
         },
         {
             status: 'Istruttrice arrampicata',
@@ -151,11 +153,10 @@ export class Timeline {
                     url: 'https://www.tripadvisor.it/Attraction_Review-g189180-d23551277-Reviews-MURUS_The_Climbing_Temple-Porto_Porto_District_Northern_Portugal.html'
                 } 
             ],
-            description: 'Your order #12345 has been confirmed and is being prepared for processing.',
-            details: ['2x Wireless Headphones', '1x Phone Case', '1x USB-C Cable']
+            details: []
         },
         {
-            status: 'Sci',
+            status: WORK.SKI,
             startMonth: MONTHS.NOV,
             startYear: 2023,
             endMonth: MONTHS.APR,
@@ -170,11 +171,10 @@ export class Timeline {
                     url: 'https://www.altitudeskischool.com'
                 } 
             ],
-            description: 'Your order #12345 has been confirmed and is being prepared for processing.',
-            details: ['2x Wireless Headphones', '1x Phone Case', '1x USB-C Cable']
+            details: []
         },
         {
-            status: 'Sci',
+            status: WORK.SKI,
             startMonth: MONTHS.NOV,
             startYear: 2022,
             endMonth: MONTHS.APR,
@@ -189,11 +189,10 @@ export class Timeline {
                     url: 'https://www.altitudeskischool.com'
                 } 
             ],
-            description: 'Your order #12345 has been confirmed and is being prepared for processing.',
-            details: ['2x Wireless Headphones', '1x Phone Case', '1x USB-C Cable']
+            details: []
         },
         {
-            status: 'Payment Confirmed',
+            status: WORK.SKI,
             startMonth: MONTHS.DEC,
             startYear: 2018,
             endMonth: MONTHS.APR,
@@ -208,26 +207,42 @@ export class Timeline {
                     url: 'https://nbsjapan.com/'
                 }
             ],
-            description: 'Payment of $149.99 was successfully processed via Credit Card ending in 4242.'
         },
         {
-            status: 'Sci',
-            startMonth: MONTHS.NOV,
-            startYear: 2025,
-            endMonth: MONTHS.APR,
-            endYear: 2026,
+            status: 'Coordinadora de recraciòn y entrenamiento',
+            startMonth: MONTHS.JAN,
+            startYear: 2018,
+            endMonth: MONTHS.JAN,
+            endYear: 2019,
             city: 'BARILOCHE',
             nation: 'AG',
-            icon: ICONS.SKI,
-            color: 'bg-blue-500',
+            icon: ICONS.ROLLER,
+            color: 'bg-pink-500',
             sites: [
                 {
                     name: 'Club Andino Bariloche',
                     url: 'https://www.clubandino.org/'
                 } 
             ],
-            description: 'Your order #12345 has been confirmed and is being prepared for processing.',
-            details: ['2x Wireless Headphones', '1x Phone Case', '1x USB-C Cable']
+            details: []
+        },
+        {
+            status: WORK.ENTRENADORA,
+            startMonth: MONTHS.JAN,
+            startYear: 2016,
+            endMonth: MONTHS.JAN,
+            endYear: 2018,
+            city: 'BARILOCHE',
+            nation: 'AG',
+            icon: ICONS.HOCKEY,
+            color: 'bg-red-500',
+            sites: [
+                {
+                    name: 'Club Los Pehuenes',
+                    url: 'http://www.pehuenes.com/index.html'
+                } 
+            ],
+            details: []
         }
   ];
 }

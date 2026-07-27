@@ -84,5 +84,9 @@
         "OCT": "Ott",
         "NOV": "Nov",
         "DEC": "Dic"
+    },
+    "WORK": {
+        "SKI": "Istruttrice di sci",
+        "ENTRENADORA": "Allenatrice e tecnico sportivo"
     }
 }
