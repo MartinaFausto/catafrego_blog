@@ -39,6 +39,9 @@
     },
     "HOME": {
         "HELLO": "Ciao, sono Catalina!",
+        "HELLO_SUBTITLE": "La montagna non è solo un luogo: è il mio modo di vivere. Porto le persone alla scoperta di ambienti naturali, dalla tranquillità dei sentieri alla magia della neve, trasformando ogni uscita in un'esperienza da ricordare.",
+        "PLACE": "Ogni luogo lascia un segno",
+        "PLACE_SUBTITLE": "I Paesi evidenziati sulla mappa rappresentano i luoghi in cui ho avuto l'opportunità di lavorare e crescere. Ognuno di essi ha contribuito a sviluppare nuove competenze, una maggiore capacità di adattamento e una visione più internazionale del mio percorso professionale.",
         "MY_STORY": "La mia storia"
     },
     "SKILL": {
@@ -52,5 +55,34 @@
     "CONTACTS": {
         "TITLE": "Costruiamo insieme nuove esperienze outdoor",
         "SUBTITLE": "Contattami per collaborazioni, progetti outdoor ed esperienze in ambiente naturale."
+    },
+    "LOCATION": {
+        "JP": "Giappone",
+        "NISEKO": "Niseko",
+        "CH": "Svizzera",
+        "VERBIER": "Verbier",
+        "AD": "Andorra",
+        "GRANDVALIRA": "Grandavalira",
+        "ORDINO": "Ordino Arcalís",
+        "AG": "Argentina",
+        "BARILOCHE": "Bariloche",
+        "PT": "Portogallo",
+        "PORTO": "Porto",
+        "FR": "Francia",
+        "ANNECY": "Annecy"
+    },
+    "MONTHS": {
+        "JAN": "Gen",
+        "FEB": "Feb",
+        "MAR": "Mar",
+        "APR": "Apr",
+        "MAY": "Mag",
+        "JUN": "Giu",
+        "JUL": "Lug",
+        "AUG": "Ago",
+        "SEP": "Set",
+        "OCT": "Ott",
+        "NOV": "Nov",
+        "DEC": "Dic"
     }
 }

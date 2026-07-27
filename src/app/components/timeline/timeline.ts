@@ -2,13 +2,36 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { AvatarModule } from 'primeng/avatar';
 import { TimelineModule } from 'primeng/timeline';
 import { ButtonModule } from 'primeng/button';
-import { Box } from '@primeicons/angular/box';
+import { CheckCircle } from '@primeicons/angular/check-circle';
 import { MapMarker } from '@primeicons/angular/map-marker';
-import { PIcon } from '@primeicons/angular/p-icon';
+import { TranslatePipe } from '@ngx-translate/core';
+import { ExternalLink } from '@primeicons/angular/external-link';
+
+const ICONS = {
+  HIKING: 'hiking',
+  SKI: 'ski',
+  CLIMBING: 'climbing',
+  BIKE: 'bike'
+} as const;
+
+const MONTHS = {
+  JAN: 'JAN',
+  FEB: 'FEB',
+  MAR: 'MAR',
+  APR: 'APR',
+  MAY: 'MAY',
+  JUN: 'JUN',
+  JUL: 'JUL',
+  AUG: 'AUG',
+  SEP: 'SEP',
+  OCT: 'OCT',
+  NOV: 'NOV',
+  DEC: 'DEC'
+} as const;
 
 @Component({
   selector: 'app-timeline',
-  imports: [AvatarModule, TimelineModule, ButtonModule, Box, MapMarker, PIcon],
+  imports: [AvatarModule, ExternalLink, TimelineModule, ButtonModule, CheckCircle, MapMarker, TranslatePipe],
   templateUrl: './timeline.html',
   styleUrl: './timeline.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
@@ -17,41 +40,194 @@ export class Timeline {
     events = [
         {
             status: 'Order Placed',
-            date: 'Oct 15, 2026',
-            time: '10:30 AM',
-            icon: 'shopping-cart',
+            startMonth: MONTHS.JUL,
+            startYear: 2026,
+            endMonth: MONTHS.SEP,
+            endYear: 2026,
+            city: 'ORDINO',
+            nation: 'AD',
+            icon: ICONS.HIKING,
+            color: 'bg-green-500',
+            sites: [
+                {
+                    name: 'Ordino Arcalís - Grandvalira Resorts',
+                    url: 'https://www.ordinoarcalis.com'
+                }  
+            ],
+            description: 'Your order #12345 has been confirmed and is being prepared for processing.',
+            details: ['2x Wireless Headphones', '1x Phone Case', '1x USB-C Cable']
+        },
+        {
+            status: 'Order Placed',
+            startMonth: MONTHS.NOV,
+            startYear: 2025,
+            endMonth: MONTHS.APR,
+            endYear: 2026,
+            city: 'ORDINO',
+            nation: 'AD',
+            icon: ICONS.SKI,
             color: 'bg-blue-500',
-            user: 'JD',
+            sites: [
+                {
+                    name: 'Grandvalira - Grandvalira Resorts',
+                    url: 'https://www.grandvalira.com'
+                },
+                {
+                    name: 'Ordino Arcalís - Grandvalira Resorts',
+                    url: 'https://www.ordinoarcalis.com'
+                }  
+            ],
+            description: 'Your order #12345 has been confirmed and is being prepared for processing.',
+            details: ['2x Wireless Headphones', '1x Phone Case', '1x USB-C Cable']
+        },
+        {
+            status: 'Guida',
+            startMonth: MONTHS.JUL,
+            startYear: 2025,
+            endMonth: MONTHS.AUG,
+            endYear: 2025,
+            city: 'VERBIER',
+            nation: 'CH',
+            icon: ICONS.HIKING,
+            color: 'bg-green-500',
+            sites: [
+                {
+                    name: 'Altitude Summer Camps',
+                    url: 'https://www.altitude-camps.com/'
+                }
+            ],
+            description: 'Your order #12345 has been confirmed and is being prepared for processing.',
+            details: ['2x Wireless Headphones', '1x Phone Case', '1x USB-C Cable']
+        },
+        {
+            status: 'Guida',
+            startMonth: MONTHS.SEP,
+            startYear: 2024,
+            city: 'ANNECY',
+            nation: 'FR',
+            icon: ICONS.BIKE,
+            color: 'bg-orange-500',
+            sites: [
+                {
+                    name: 'Grandvalira - Grandvalira Resorts',
+                    url: 'https://www.grandvalira.com'
+                }
+            ],
+            description: 'Your order #12345 has been confirmed and is being prepared for processing.',
+            details: ['2x Wireless Headphones', '1x Phone Case', '1x USB-C Cable']
+        },
+        {
+            status: 'Guida',
+            startMonth: MONTHS.JUL,
+            startYear: 2024,
+            endMonth: MONTHS.AUG,
+            endYear: 2024,
+            city: 'VERBIER',
+            nation: 'CH',
+            icon: ICONS.HIKING,
+            color: 'bg-green-500',
+            sites: [
+                {
+                    name: 'Altitude Summer Camps',
+                    url: 'https://www.altitude-camps.com/'
+                }
+            ],
+            description: 'Your order #12345 has been confirmed and is being prepared for processing.',
+            details: ['2x Wireless Headphones', '1x Phone Case', '1x USB-C Cable']
+        },
+        {
+            status: 'Istruttrice arrampicata',
+            startMonth: MONTHS.NOV,
+            startYear: 2025,
+            endMonth: MONTHS.APR,
+            endYear: 2026,
+            city: 'PORTO',
+            nation: 'PT',
+            icon: ICONS.CLIMBING,
+            color: 'bg-yellow-500',
+            sites: [
+                {
+                    name: 'Murus Climbing Temple',
+                    url: 'https://www.tripadvisor.it/Attraction_Review-g189180-d23551277-Reviews-MURUS_The_Climbing_Temple-Porto_Porto_District_Northern_Portugal.html'
+                } 
+            ],
+            description: 'Your order #12345 has been confirmed and is being prepared for processing.',
+            details: ['2x Wireless Headphones', '1x Phone Case', '1x USB-C Cable']
+        },
+        {
+            status: 'Sci',
+            startMonth: MONTHS.NOV,
+            startYear: 2023,
+            endMonth: MONTHS.APR,
+            endYear: 2024,
+            city: 'VERBIER',
+            nation: 'CH',
+            icon: ICONS.SKI,
+            color: 'bg-blue-500',
+            sites: [
+                {
+                    name: 'Altitude Ski & Snowboard School',
+                    url: 'https://www.altitudeskischool.com'
+                } 
+            ],
+            description: 'Your order #12345 has been confirmed and is being prepared for processing.',
+            details: ['2x Wireless Headphones', '1x Phone Case', '1x USB-C Cable']
+        },
+        {
+            status: 'Sci',
+            startMonth: MONTHS.NOV,
+            startYear: 2022,
+            endMonth: MONTHS.APR,
+            endYear: 2023,
+            city: 'VERBIER',
+            nation: 'CH',
+            icon: ICONS.SKI,
+            color: 'bg-blue-500',
+            sites: [
+                {
+                    name: 'Altitude Ski & Snowboard School',
+                    url: 'https://www.altitudeskischool.com'
+                } 
+            ],
             description: 'Your order #12345 has been confirmed and is being prepared for processing.',
             details: ['2x Wireless Headphones', '1x Phone Case', '1x USB-C Cable']
         },
         {
             status: 'Payment Confirmed',
-            date: 'Oct 15, 2026',
-            time: '10:32 AM',
-            icon: 'credit-card',
-            color: 'bg-green-500',
-            user: 'SY',
+            startMonth: MONTHS.DEC,
+            startYear: 2018,
+            endMonth: MONTHS.APR,
+            endYear: 2019,
+            city: 'NISEKO',
+            nation: 'JP',
+            icon: ICONS.SKI,
+            color: 'bg-blue-500',
+            sites: [
+                {
+                    name: 'Niseko Base Snowsports',
+                    url: 'https://nbsjapan.com/'
+                }
+            ],
             description: 'Payment of $149.99 was successfully processed via Credit Card ending in 4242.'
         },
         {
-            status: 'Shipped',
-            date: 'Oct 16, 2026',
-            time: '02:15 PM',
-            icon: 'truck',
-            color: 'bg-orange-500',
-            user: 'MK',
-            description: 'Package has been handed to the carrier and is on its way.',
-            tracking: 'TRK-892374651'
-        },
-        {
-            status: 'Delivered',
-            date: 'Oct 18, 2026',
-            time: '11:20 AM',
-            icon: 'check-circle',
-            color: 'bg-lime-500',
-            user: 'JD',
-            description: 'Package was delivered and signed for at the front door.'
+            status: 'Sci',
+            startMonth: MONTHS.NOV,
+            startYear: 2025,
+            endMonth: MONTHS.APR,
+            endYear: 2026,
+            city: 'BARILOCHE',
+            nation: 'AG',
+            icon: ICONS.SKI,
+            color: 'bg-blue-500',
+            sites: [
+                {
+                    name: 'Club Andino Bariloche',
+                    url: 'https://www.clubandino.org/'
+                } 
+            ],
+            description: 'Your order #12345 has been confirmed and is being prepared for processing.',
+            details: ['2x Wireless Headphones', '1x Phone Case', '1x USB-C Cable']
         }
   ];
 }

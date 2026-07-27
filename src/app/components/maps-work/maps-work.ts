@@ -101,24 +101,52 @@ export class MapsWork implements AfterViewInit, OnDestroy {
     // 5. Dati dei punti
     pointSeries.data.setAll([
       {
-        title: "Appennino Tosco Emiliano",
+        title: "CITIES.JP",
         geometry: {
           type: "Point",
-          coordinates: [10.3, 44.3]
+          coordinates: [140.7020, 42.8598]
         }
       },
       {
-        title: "Pirenei",
+        title: "Bariloche",
         geometry: {
           type: "Point",
-          coordinates: [0.5, 42.5]
+          coordinates: [-71.310309, -41.135412]
         }
       },
       {
-        title: "Cammino Portoghese",
+        title: "Verbier",
         geometry: {
           type: "Point",
-          coordinates: [-8.6, 41.1]
+          coordinates: [7.2286, 46.0965]
+        }
+      },
+      {
+        title: "Granvalira",
+        geometry: {
+          type: "Point",
+          coordinates: [1.6400, 42.5600]
+        }
+      },
+      {
+        title: "Ordino",
+        geometry: {
+          type: "Point",
+          coordinates: [1.5332, 42.5562]
+        }
+      },
+      {
+        title: "Annecy",
+        geometry: {
+          type: "Point",
+          coordinates: [6.1294, 45.8992]
+        }
+      },
+      {
+        title: "Murus Climbing Temple",
+        geometry: {
+          type: "Point",
+          coordinates: [-8.60003, 41.11863]
         }
       }
     ]);
