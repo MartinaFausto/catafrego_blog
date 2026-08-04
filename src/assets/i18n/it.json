@@ -87,6 +87,7 @@
     },
     "WORK": {
         "SKI": "Istruttrice di sci",
-        "ENTRENADORA": "Allenatrice e tecnico sportivo"
+        "ENTRENADORA": "Allenatrice e tecnico sportivo",
+        "CLIMBING": "Istruttrice di arrampicata e responsabile"
     }
 }

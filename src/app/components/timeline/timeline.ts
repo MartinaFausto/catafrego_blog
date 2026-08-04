@@ -13,7 +13,8 @@ const ICONS = {
   CLIMBING: 'climbing',
   BIKE: 'bike',
   HOCKEY: 'hockey',
-  ROLLER: 'roller'
+  ROLLER: 'roller',
+  RUNNING: 'running'
 } as const;
 
 const MONTHS = {
@@ -33,7 +34,8 @@ const MONTHS = {
 
 const WORK = {
     SKI: 'SKI',
-    ENTRENADORA: 'ENTRENADORA'
+    ENTRENADORA: 'ENTRENADORA',
+    CLIMBING: 'CLIMBING'
 }
 
 @Component({
@@ -138,7 +140,7 @@ export class Timeline {
             details: []
         },
         {
-            status: 'Istruttrice arrampicata',
+            status: WORK.CLIMBING,
             startMonth: MONTHS.NOV,
             startYear: 2025,
             endMonth: MONTHS.APR,
