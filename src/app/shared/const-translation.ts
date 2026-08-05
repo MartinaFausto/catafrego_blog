@@ -30,7 +30,7 @@ export const EDUCATION = {
 export const COURSE = {
     FIRST_AID_OUTDOOR: 'COURSE.FIRST_AID_OUTDOOR',
     AIGAE: 'COURSE.AIGAE',
-    ICEMP: 'COURSE.ICEMP'
+    ICEMP: 'COURSE.ICEMP',
 }
 
 export const LANGUAGE_LEVEL = {
@@ -60,5 +60,8 @@ export const LOCATION = {
     SP: 'SP',
     POBLA: 'POBLA',
     IT: 'IT',
-    PARMA: 'PARMA'
+    PARMA: 'PARMA',
+    HU: 'HU',
+    CZ: 'CZ',
+    BUK: 'BUK'
 } as const;

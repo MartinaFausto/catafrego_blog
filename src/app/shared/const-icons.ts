@@ -9,4 +9,5 @@ export const ICONS = {
     BOOKS: 'books',
     GRADUATION: 'graduation',
     HEALTH: 'health',
+    GYM: 'gym',
 } as const;

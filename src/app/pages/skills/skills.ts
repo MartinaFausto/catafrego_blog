@@ -156,10 +156,26 @@ export class Skills {
         ],
         details: []
     },
+    {
+        status: 'Personal Trainer EQF Level 4',
+        startMonth: MONTHS.OCT,
+        startYear: 2024,
+        endMonth: MONTHS.NOV,
+        endYear: 2024,
+        icon: ICONS.RUNNING,
+        color: COLOR.ACCENT,
+        sites: [
+            {
+                name: COURSE.ICEMP,
+                url: 'https://icempallars.net/estudi/cicle-inicial-de-grau-mitja-de-senderisme/'
+            }, 
+        ],
+        details: []
+    }
   ];
 
 
-certifications = [
+  certifications = [
     {
         title: 'Primo Soccorso Outdoor',
         icon: 'pi pi-heart',
@@ -232,7 +248,7 @@ certifications = [
         document: 'assets/documents/primo-intervento.pdf',
         language: 'Italiano'
     }
-];
+  ];
 
   technicalSkills: Skill[] = [
     {

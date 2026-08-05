@@ -31,6 +31,22 @@ export class WorkExperience {
             details: []
         },
         {
+            status: WORK.GUIDE,
+            startMonth: MONTHS.MAY,
+            startYear: 2026,
+            city: LOCATION.BUK,
+            nation: LOCATION.HU,
+            icon: ICONS.HIKING,
+            color: COLOR.PRIMARY,
+            sites: [
+                {
+                    name: 'Jump Foundation',
+                    url: 'https://jumpfoundation.org/programs/off-campus/'
+                }  
+            ],
+            details: []
+        },
+        {
             status: WORK.SKI,
             startMonth: MONTHS.NOV,
             startYear: 2025,
@@ -80,8 +96,8 @@ export class WorkExperience {
             color: COLOR.SECONDARY,
             sites: [
                 {
-                    name: 'Grandvalira - Grandvalira Resorts',
-                    url: 'https://www.grandvalira.com'
+                    name: 'It\'s',
+                    url: 'https://itsschooltrips.com/'
                 }
             ],
             details: []

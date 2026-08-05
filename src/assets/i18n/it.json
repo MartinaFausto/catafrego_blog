@@ -73,7 +73,10 @@
         "SP": "Spagna",
         "POBLA": "La Pobla de Segur",
         "IT": "Italia",
-        "PARMA": "Parma"
+        "PARMA": "Parma",
+        "HU": "Ungheria",
+        "CZ": "Repubblica Ceca",
+        "BUK": "Buk"
     },
     "MONTHS": {
         "JAN": "Gen",
