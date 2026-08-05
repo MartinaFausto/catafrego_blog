@@ -24,8 +24,8 @@ export class WorkExperience {
             color: COLOR.PRIMARY,
             sites: [
                 {
-                    name: 'Ordino Arcalís - Grandvalira Resorts',
-                    url: 'https://www.ordinoarcalis.com'
+                    name: 'Eski Club - Ordino Arcalís',
+                    url: 'https://ecoa.ad/'
                 }  
             ],
             details: []
@@ -58,8 +58,8 @@ export class WorkExperience {
             color: COLOR.ACCENT,
             sites: [
                 {
-                    name: 'Grandvalira - Grandvalira Resorts',
-                    url: 'https://www.grandvalira.com'
+                    name: 'Eski Club - Ordino Arcalís',
+                    url: 'https://ecoa.ad/'
                 },
                 {
                     name: 'Ordino Arcalís - Grandvalira Resorts',
