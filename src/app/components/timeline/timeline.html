@@ -5,13 +5,13 @@
     [pt]="{ event: { class: '@max-[480px]:flex-row!' }, eventOpposite: { class: '@max-[480px]:hidden' }, eventContent: { class: '@max-[480px]:text-left!' }, eventConnector: { class: 'mb-4' } }"
 >
     <ng-template #opposite let-event>
-        <div class="font-medium text-surface-700 dark:text-surface-200">
+        <div class="font-medium text-accent">
             {{ 'MONTHS.' + event.startMonth | translate }} {{ event.startYear }}
             @if (event.endMonth) {
             - {{ 'MONTHS.' + event.endMonth | translate }} {{ event.endYear }}
             }
         </div>
-        <div class="text-sm text-surface-500 dark:text-surface-400">
+        <div class="text-sm text-accent">
             {{ 'LOCATION.' + event.city | translate }}, 
             {{ 'LOCATION.' + event.nation | translate }}
         </div>
@@ -27,8 +27,8 @@
         </span>
     </ng-template>
     <ng-template #content let-event>
-        <div class="p-5 rounded-xl bg-surface-0 dark:bg-surface-800 border border-surface-200 dark:border-surface-700 shadow-sm mb-4 text-left">
-            <div class="hidden @max-[480px]:block mb-2 text-sm text-surface-500 dark:text-surface-400">
+        <div class="p-5 rounded-xl bg-surface-0 dark:bg-surface-800 border border-accent shadow-sm mb-4 text-left">
+            <div class="hidden @max-[480px]:block mb-2 text-sm text-accent">
                 {{ 'MONTHS.' + event.startMonth | translate }} {{ event.startYear }}
                 @if (event.endMonth) {
                 - {{ 'MONTHS.' + event.endMonth | translate }} {{ event.endYear }}
@@ -41,7 +41,7 @@
                 @if (event.user) {
                     <p-avatar [label]="event.user" shape="circle" class="bg-primary/10! text-primary! font-semibold!" />
                 }
-                <span class="font-bold text-surface-900 dark:text-surface-0">{{ event.status | translate }}</span>
+                <span class="font-bold text-accent">{{ event.status | translate }}</span>
             </div>
             <span class="text-surface-600 dark:text-surface-300 text-sm leading-relaxed">{{ event.description }}</span>
             @if (event.details) {
@@ -61,7 +61,7 @@
 
                         <li class="text-sm text-surface-500 dark:text-surface-400 flex items-center gap-2">
 
-                            <svg data-p-icon="external-link" class="text-xs"></svg>
+                            <svg data-p-icon="link" class="text-xs text-primary"></svg>
 
                             <a
                                 [href]="site.url"
