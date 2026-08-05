@@ -12,101 +12,47 @@
 
 </section>
 
+
+
+
 <main class="max-w-5xl mx-auto px-4 sm:px-6">
 
-    <section class="py-12">
+    <section class="py-8">
         <div class="text-center">
             <h2 class="text-3xl font-bold">
-                Certificazioni e Formazione Outdoor
+                Formazione
             </h2>
-
-            <p class="mt-4 text-lg text-surface-600 max-w-3xl mx-auto leading-relaxed">
-                Percorsi formativi e competenze acquisite nell'ambito della sicurezza,
-                dell'escursionismo e dell'educazione in ambiente naturale.
-            </p>
         </div>
-
     </section>
 
-    <section class="flex justify-center">
-        <app-cv-downloader></app-cv-downloader>
+    <section class="py-8">
+        <app-timeline
+            [items]="education"
+        ></app-timeline>
     </section>
-
-    <br><br>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-
-        @for (certification of certifications; track certification.title) {
-
-        <p-card
-            styleClass="h-full flex flex-col">
-
-            <ng-template #title>
-                <div class="flex items-center gap-2">
-                    <i [class]="certification.icon"></i>
-                    <span>{{ certification.title }}</span>
-                </div>
-            </ng-template>
-
-
-            <div class="flex flex-col flex-1">
-
-                <!-- Descrizione -->
-                <p class="text-sm leading-relaxed">
-                    {{ certification.description }}
-                </p>
-
-
-                <!-- Punti chiave -->
-                <div class="flex flex-col gap-2 mt-5">
-
-                    @for (point of certification.points; track point) {
-
-                        <div class="flex items-start gap-2">
-                            <i class="pi pi-check-circle mt-1"></i>
-                            <span>{{ point }}</span>
-                        </div>
-
-                    }
-
-                </div>
-
-
-                <!-- Spazio elastico + footer -->
-                <div class="mt-auto pt-6">
-
-                    <div class="flex flex-col sm:flex-row justify-between items-center gap-3">
-
-                        <p-tag
-                            [value]="certification.language"
-                            severity="secondary">
-                        </p-tag>
-
-
-                        <a
-                            [href]="certification.document"
-                            target="_blank"
-                            class="p-button p-button-sm w-full sm:w-auto justify-center">
-
-                            <i class="pi pi-download mr-2"></i>
-                            Documento
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </p-card>
-
-        }
-
-    </div>
 
 </main>
 
+<main class="max-w-5xl mx-auto px-4 sm:px-6">
+
+    <section class="py-8">
+        <div class="text-center">
+            <h2 class="text-3xl font-bold">
+                Corsi e certificazioni
+            </h2>
+        </div>
+    </section>
+
+    <section class="py-8">
+        <app-timeline
+            [items]="cursos"
+        ></app-timeline>
+    </section>
+
+</main>
+
+
+ 
 
 <div class="flex flex-col md:flex-row justify-center gap-6">
     
@@ -169,10 +115,6 @@
     </p-card>
 
 </div>
-
-<p-divider
-    class="hidden md:flex">
-</p-divider>
 
 <div class="flex flex-col md:flex-row justify-center gap-6">
     
@@ -254,5 +196,22 @@
         </div>
     </p-card>
 </div>
+
+<main class="max-w-5xl mx-auto px-4 sm:px-6">
+
+    <section class="py-8">
+        <div class="text-center">
+            <h2 class="text-3xl font-bold">
+                Scarica il mio curriculum vitae
+            </h2>
+        </div>
+
+    </section>
+
+    <section class="flex justify-center">
+        <app-cv-downloader></app-cv-downloader>
+    </section>
+    
+</main>
 
 <p-divider/>

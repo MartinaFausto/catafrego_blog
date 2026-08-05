@@ -38,6 +38,9 @@ export class MapsWork implements AfterViewInit, OnDestroy {
     const zoomControl = chart.set("zoomControl", am5map.ZoomControl.new(this.root, {}));
     zoomControl.homeButton.set("visible", true);
 
+    // GESTIONE COLORI
+    this.zoomControlColors(zoomControl);
+
     // 3. Serie per i confini dei paesi (Poligoni)
     const polygonSeries = chart.series.push(
       am5map.MapPolygonSeries.new(this.root, {
@@ -56,13 +59,26 @@ export class MapsWork implements AfterViewInit, OnDestroy {
       am5map.MapPointSeries.new(this.root, {})
     );
 
+    // Colori marker presi dalla root
+    const markerColors = [
+        this.getCssColor('primary'),
+        this.getCssColor('secondary'),
+        this.getCssColor('accent')
+    ];
+
+    let markerIndex = 0;
+
+
     pointSeries.bullets.push(() => {
       const container = am5.Container.new(this.root, {});
+
+      const color = markerColors[markerIndex % markerColors.length];
+      markerIndex++;
 
       const pulse = container.children.push(
         am5.Circle.new(this.root, {
           radius: 10,
-          fill: am5.color(0x22c55e),
+          fill: color,
           opacity: 0.4,
           interactive: false
         })
@@ -71,7 +87,7 @@ export class MapsWork implements AfterViewInit, OnDestroy {
       const circle = container.children.push(
         am5.Circle.new(this.root, {
           radius: 5,
-          fill: am5.color(0x16a34a),
+          fill: color,
           tooltipText: "{title}",
           interactive: true
         })
@@ -161,4 +177,44 @@ export class MapsWork implements AfterViewInit, OnDestroy {
 
   }
 
+  private getCssColor = (name: string) => {
+    const color = getComputedStyle(document.documentElement)
+        .getPropertyValue(`--color-${name}`)
+        .trim();
+
+    return am5.color(color);
+  }
+
+  zoomControlColors(zoomControl: any) {
+    const accent = this.getCssColor('accent');
+    const primary = this.getCssColor('primary');
+    const secondary = this.getCssColor('secondary');
+
+
+    const buttonStyle = (button: am5.Button) => {
+
+        const background = button.get("background");
+
+        background?.setAll({
+            fill: accent,
+            stroke: accent
+        });
+
+        background?.states.create("hover", {
+            fill: primary,
+            stroke: primary
+        });
+
+        background?.states.create("down", {
+            fill: secondary,
+            stroke: secondary
+        });
+
+    };
+
+
+    buttonStyle(zoomControl.plusButton);
+    buttonStyle(zoomControl.minusButton);
+    buttonStyle(zoomControl.homeButton);
+  }
 }

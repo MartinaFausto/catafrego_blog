@@ -1,2 +1,47 @@
 @import "tailwindcss";
 @import "primeicons/primeicons.css";
+
+:root {
+    --color-primary: #4E6148;   /* Verde Bosco (Alberi) */
+    --color-secondary: #B05333; /* Terracotta / Ruggine */
+    --color-accent: #273C53;    /* Blu Notte / Ardesia */
+}
+
+@theme {
+    --color-primary: var(--color-primary);
+    --color-secondary: var(--color-secondary);
+    --color-accent: var(--color-accent);
+}
+
+.color-primary {
+    background-color: var(--color-primary);
+}
+
+.color-secondary {
+    background-color: var(--color-secondary);
+}
+
+.color-accent {
+    background-color: var(--color-accent);
+}
+
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.text-secondary {
+    color: var(--color-secondary);
+}
+
+.text-accent {
+    color: var(--color-accent);
+}
+
+h2 {
+    color: var(--color-accent);
+}
+
+p {
+    color: var(--color-accent);
+}

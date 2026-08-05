@@ -6,24 +6,28 @@
            backdrop-blur-xl
            transition-all duration-300"
     [ngClass]="scrolled 
-        ? 'bg-slate-900/90 shadow-xl' 
+        ? 'color-accent shadow-xl' 
         : 'bg-white/10'">
 
 
-    <div class="flex items-center justify-between px-6 py-3">
+    <div class="flex items-center justify-between pr-4">
 
 
         <!-- Logo -->
         <a
             routerLink="/"
-            class="bg-white rounded-full px-4 py-2
-                text-green-600
-                text-xl font-bold tracking-wide
-                whitespace-nowrap cursor-pointer
-                transition-all duration-300
-                hover:scale-105">
+            class="bg-white flex items-center justify-center
+                w-22 h-22
+                rounded-full
+                overflow-hidden
+                shadow-md
+                hover:scale-105
+                transition-all duration-300">
 
-            Catalina Fregonese
+            <img
+                src="assets/imgs/loginscibricchibig.png"
+                alt="Logo"
+                class="w-full h-full object-cover">
 
         </a>
 
@@ -86,7 +90,7 @@
             class="absolute top-full left-0 mt-3
                    w-full
                    rounded-3xl
-                   bg-slate-900/95
+                   color-accent
                    backdrop-blur-xl
                    border border-white/20
                    p-4

@@ -1,5 +1,5 @@
 <p-timeline
-    [value]="events"
+    [value]="items"
     align="alternate"
     class="w-full @container"
     [pt]="{ event: { class: '@max-[480px]:flex-row!' }, eventOpposite: { class: '@max-[480px]:hidden' }, eventContent: { class: '@max-[480px]:text-left!' }, eventConnector: { class: 'mb-4' } }"
@@ -41,7 +41,7 @@
                 @if (event.user) {
                     <p-avatar [label]="event.user" shape="circle" class="bg-primary/10! text-primary! font-semibold!" />
                 }
-                <span class="font-bold text-surface-900 dark:text-surface-0">{{ 'WORK.' + event.status | translate }}</span>
+                <span class="font-bold text-surface-900 dark:text-surface-0">{{ event.status | translate }}</span>
             </div>
             <span class="text-surface-600 dark:text-surface-300 text-sm leading-relaxed">{{ event.description }}</span>
             @if (event.details) {
@@ -68,7 +68,7 @@
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 class="text-primary underline">
-                                {{ site.name }}
+                                {{ site.name | translate}}
                             </a>
 
                         </li>

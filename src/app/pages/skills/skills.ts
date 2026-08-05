@@ -5,6 +5,10 @@ import { TagModule } from 'primeng/tag';
 import { LANGUAGE_CODES } from '../../utils/translate-utility';
 import { DividerModule } from 'primeng/divider';
 import { TranslatePipe } from '@ngx-translate/core';
+import { COURSE, EDUCATION, LANGUAGE_LEVEL, LOCATION, MONTHS } from '../../shared/const-translation';
+import { Timeline } from '../../components/timeline/timeline';
+import { COLOR } from '../../shared/const-styles';
+import { ICONS } from '../../shared/const-icons';
 
 interface Skill {
   label: string;
@@ -14,19 +18,146 @@ interface Skill {
 
 interface Language {
   label: string;
-  level: 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2' | 'N';
+  level: typeof LANGUAGE_LEVEL[keyof typeof LANGUAGE_LEVEL];
   flag: string;
 }
 
-
-
 @Component({
   selector: 'app-skills',
-  imports: [CvDownloader, TranslatePipe, CardModule, DividerModule, TagModule],
+  imports: [CvDownloader, TranslatePipe, CardModule, DividerModule, TagModule, Timeline],
   templateUrl: './skills.html',
   styleUrl: './skills.scss',
 })
 export class Skills {
+
+  education = [
+    {
+        status: EDUCATION.PROF,
+        startMonth: MONTHS.JAN,
+        startYear: 2013,
+        endMonth: MONTHS.JAN,
+        endYear: 2017,
+        city: LOCATION.BARILOCHE,
+        nation: LOCATION.AG,
+        icon: ICONS.GRADUATION,
+        color: COLOR.SECONDARY,
+        sites: [
+            {
+                name: 'Universidad Nacional de Comahue',
+                url: 'https://app.crub.uncoma.edu.ar/inicio/novedades'
+            }  
+        ],
+        details: []
+    },
+    {
+        status: EDUCATION.SKI,
+        startMonth: MONTHS.JUL,
+        startYear: 2012,
+        endMonth: MONTHS.OCT,
+        endYear: 2019,
+        city: LOCATION.BARILOCHE,
+        nation: LOCATION.AG,
+        icon: ICONS.SKI,
+        color: COLOR.ACCENT,
+        sites: [
+            {
+                name: 'Instituto Superiorde Esquiy Snowboard (AADIDESS)',
+                url: 'https://www.aadidess.com/2026/'
+            }, 
+        ],
+        details: []
+    },
+    {
+        status: EDUCATION.COLEGIO,
+        startMonth: MONTHS.JAN,
+        startYear: 2008,
+        endMonth: MONTHS.JAN,
+        endYear: 2012,
+        city: LOCATION.BARILOCHE,
+        nation: LOCATION.AG,
+        icon: ICONS.BOOKS,
+        color: COLOR.PRIMARY,
+        sites: [
+            {
+                name: 'Colegio San Patricio',
+                url: 'https://spatricio.com.ar/'
+            }
+        ],
+        details: []
+    }
+  ];
+
+  cursos = [
+    {
+        status: COURSE.FIRST_AID_OUTDOOR,
+        startMonth: MONTHS.APR,
+        startYear: 2026,
+        city: LOCATION.PARMA,
+        nation: LOCATION.IT,
+        icon: ICONS.HEALTH,
+        color: COLOR.SECONDARY,
+        sites: [
+            {
+                name: COURSE.AIGAE,
+                url: 'https://www.aigae.org/events/parma-primo-soccorso-outdoor-inizio-18-04-2026/'
+            }  
+        ],
+        details: ['Ferite da arma da fuoco', 'Crisi e convulsioni', 'Congelamento', 'Colpo di calore']
+    },
+    {
+        status: 'TD2 Senderismo',
+        startMonth: MONTHS.OCT,
+        startYear: 2025,
+        endMonth: MONTHS.MAR,
+        endYear: 2026,
+        city: LOCATION.POBLA,
+        nation: LOCATION.SP,
+        icon: ICONS.HIKING,
+        color: COLOR.PRIMARY,
+        sites: [
+            {
+                name: COURSE.ICEMP,
+                url: 'https://icempallars.net/estudi/cf-gm-de-muntanya-mitjana/'
+            }, 
+        ],
+        details: []
+    },
+    {
+        status: COURSE.FIRST_AID_OUTDOOR,
+        startMonth: MONTHS.APR,
+        startYear: 2026,
+        city: LOCATION.VERBIER,
+        nation: LOCATION.CH,
+        icon: ICONS.HEALTH,
+        color: COLOR.SECONDARY,
+        sites: [
+            {
+                name: COURSE.AIGAE,
+                url: 'https://www.aigae.org/events/parma-primo-soccorso-outdoor-inizio-18-04-2026/'
+            }  
+        ],
+        details: []
+    },
+    {
+        status: 'TD1 Senderismo',
+        startMonth: MONTHS.OCT,
+        startYear: 2024,
+        endMonth: MONTHS.NOV,
+        endYear: 2024,
+        city: LOCATION.POBLA,
+        nation: LOCATION.SP,
+        icon: ICONS.HIKING,
+        color: COLOR.PRIMARY,
+        sites: [
+            {
+                name: COURSE.ICEMP,
+                url: 'https://icempallars.net/estudi/cicle-inicial-de-grau-mitja-de-senderisme/'
+            }, 
+        ],
+        details: []
+    },
+  ];
+
 
 certifications = [
     {

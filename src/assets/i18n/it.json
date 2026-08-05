@@ -3,8 +3,8 @@
     "MOBILITY": "Mobilità",
     "DOCUMENTS": "Documenti",
     "DRIVING_LICENCE": {
-        "TITLE": "Driving Licence",
-        "LICENCE": "European Category B"
+        "TITLE": "Patente di guida",
+        "LICENCE": "Categoria B Europea"
     },
     "LANGUAGE": {
         "EN": "Inglese",
@@ -69,7 +69,11 @@
         "PT": "Portogallo",
         "PORTO": "Porto",
         "FR": "Francia",
-        "ANNECY": "Annecy"
+        "ANNECY": "Annecy",
+        "SP": "Spagna",
+        "POBLA": "La Pobla de Segur",
+        "IT": "Italia",
+        "PARMA": "Parma"
     },
     "MONTHS": {
         "JAN": "Gen",
@@ -88,6 +92,18 @@
     "WORK": {
         "SKI": "Istruttrice di sci",
         "ENTRENADORA": "Allenatrice e tecnico sportivo",
-        "CLIMBING": "Istruttrice di arrampicata e responsabile"
+        "CLIMBING": "Istruttrice di arrampicata e responsabile",
+        "GUIDE": "Guida di montagna",
+        "RECREATION": "Coordinatrice di attività ricreative e allenamento"
+    },
+    "EDUCATION": {
+        "PROF": "Carriera di Scienze Motorie e Sportive",
+        "SKI": "Istruttrice di Sci Livello 3",
+        "COLEGIO": "Scuola secondaria superiore"
+    },
+    "COURSE": {
+        "FIRST_AID_OUTDOOR": "Primo Soccorso Outdoor",
+        "AIGAE": "AIGAE: Associazione Italiana Guide Ambientali Escursionistiche",
+        "ICEMP": "ICEMP: Istituto Centro di Sport di Montagna del Pallars"
     }
 }
