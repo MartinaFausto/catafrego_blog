@@ -123,6 +123,22 @@ export class Skills {
         details: ['Ferite da arma da fuoco', 'Crisi e convulsioni', 'Congelamento', 'Colpo di calore']
     },
     {
+        status: 'Curso de Aludes para Guías (CAG) – Nivel 1',
+        startMonth: MONTHS.FEB,
+        startYear: 2026,
+        city: LOCATION.PIRENEOS,
+        nation: LOCATION.SP,
+        icon: ICONS.HIKING,
+        color: COLOR.PRIMARY,
+        sites: [
+            {
+                name: COURSE.ACNA,
+                url: 'https://www.acna.cat/formacio/curs-allaus-per-a-guies-nivell-1/'
+            }  
+        ],
+        details: []
+    },
+    {
         status: 'TD1 Senderismo',
         startMonth: MONTHS.OCT,
         startYear: 2024,

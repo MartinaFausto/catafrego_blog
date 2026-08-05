@@ -33,6 +33,7 @@ export const COURSE = {
     ICEMP: 'COURSE.ICEMP',
     NUCO: 'COURSE.NUCO',
     ALTO: 'COURSE.ALTO',
+    ACNA: 'COURSE.ACNA',
 }
 
 export const LANGUAGE_LEVEL = {
@@ -67,4 +68,5 @@ export const LOCATION = {
     CZ: 'CZ',
     BUK: 'BUK',
     VILLANOVA: 'VILLANOVA',
+    PIRENEOS: 'PIRENEOS'
 } as const;
