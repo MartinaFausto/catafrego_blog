@@ -226,6 +226,24 @@ export class WorkExperience {
                 } 
             ],
             details: []
+        },
+        {
+            status: WORK.SKI,
+            startMonth: MONTHS.JUL,
+            startYear: 2012,
+            endMonth: MONTHS.OCT,
+            endYear: 2020,
+            city: LOCATION.BARILOCHE,
+            nation: LOCATION.AG,
+            icon: ICONS.SKI,
+            color: COLOR.ACCENT,
+            sites: [
+                {
+                    name: 'Club Andino Bariloche',
+                    url: 'https://www.clubandino.org/'
+                } 
+            ],
+            details: []
         }
   ];
 
