@@ -32,6 +32,24 @@ export class Skills {
 
   education = [
     {
+        status: 'TD2 Senderismo',
+        startMonth: MONTHS.OCT,
+        startYear: 2025,
+        endMonth: MONTHS.MAR,
+        endYear: 2026,
+        city: LOCATION.POBLA,
+        nation: LOCATION.SP,
+        icon: ICONS.HIKING,
+        color: COLOR.PRIMARY,
+        sites: [
+            {
+                name: COURSE.ICEMP,
+                url: 'https://icempallars.net/estudi/cf-gm-de-muntanya-mitjana/'
+            }, 
+        ],
+        details: []
+    },
+    {
         status: EDUCATION.PROF,
         startMonth: MONTHS.JAN,
         startYear: 2013,
@@ -103,24 +121,6 @@ export class Skills {
             }  
         ],
         details: ['Ferite da arma da fuoco', 'Crisi e convulsioni', 'Congelamento', 'Colpo di calore']
-    },
-    {
-        status: 'TD2 Senderismo',
-        startMonth: MONTHS.OCT,
-        startYear: 2025,
-        endMonth: MONTHS.MAR,
-        endYear: 2026,
-        city: LOCATION.POBLA,
-        nation: LOCATION.SP,
-        icon: ICONS.HIKING,
-        color: COLOR.PRIMARY,
-        sites: [
-            {
-                name: COURSE.ICEMP,
-                url: 'https://icempallars.net/estudi/cf-gm-de-muntanya-mitjana/'
-            }, 
-        ],
-        details: []
     },
     {
         status: COURSE.FIRST_AID_OUTDOOR,
