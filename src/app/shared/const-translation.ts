@@ -63,5 +63,6 @@ export const LOCATION = {
     PARMA: 'PARMA',
     HU: 'HU',
     CZ: 'CZ',
-    BUK: 'BUK'
+    BUK: 'BUK',
+    VILLANOVA: 'VILLANOVA',
 } as const;

@@ -117,7 +117,7 @@ export class MapsWork implements AfterViewInit, OnDestroy {
     // 5. Dati dei punti
     pointSeries.data.setAll([
       {
-        title: "CITIES.JP",
+        title: "Niseko",
         geometry: {
           type: "Point",
           coordinates: [140.7020, 42.8598]
@@ -164,7 +164,14 @@ export class MapsWork implements AfterViewInit, OnDestroy {
           type: "Point",
           coordinates: [-8.60003, 41.11863]
         }
-      }
+      },
+      {
+        title: "Buk",
+        geometry: {
+          type: "Point",
+          coordinates: [20.5000, 48.0833]
+        }
+      },
     ]);
 
     chart.appear(1000, 100);

@@ -24,7 +24,7 @@ export class WorkExperience {
             color: COLOR.PRIMARY,
             sites: [
                 {
-                    name: 'Eski Club - Ordino Arcalís',
+                    name: 'Esquí Club Ordino Arcalis - ECOA',
                     url: 'https://ecoa.ad/'
                 }  
             ],
@@ -58,7 +58,7 @@ export class WorkExperience {
             color: COLOR.ACCENT,
             sites: [
                 {
-                    name: 'Eski Club - Ordino Arcalís',
+                    name: 'Esquí Club Ordino Arcalis - ECOA',
                     url: 'https://ecoa.ad/'
                 },
                 {
@@ -122,11 +122,11 @@ export class WorkExperience {
         },
         {
             status: WORK.CLIMBING,
-            startMonth: MONTHS.NOV,
-            startYear: 2025,
-            endMonth: MONTHS.APR,
-            endYear: 2026,
-            city: LOCATION.PORTO,
+            startMonth: MONTHS.JAN,
+            startYear: 2021,
+            endMonth: MONTHS.NOV,
+            endYear: 2023,
+            city: LOCATION.VILLANOVA,
             nation: LOCATION.PT,
             icon: ICONS.CLIMBING,
             color: COLOR.SECONDARY,
