@@ -123,22 +123,6 @@ export class Skills {
         details: ['Ferite da arma da fuoco', 'Crisi e convulsioni', 'Congelamento', 'Colpo di calore']
     },
     {
-        status: COURSE.FIRST_AID_OUTDOOR,
-        startMonth: MONTHS.APR,
-        startYear: 2026,
-        city: LOCATION.VERBIER,
-        nation: LOCATION.CH,
-        icon: ICONS.HEALTH,
-        color: COLOR.SECONDARY,
-        sites: [
-            {
-                name: COURSE.AIGAE,
-                url: 'https://www.aigae.org/events/parma-primo-soccorso-outdoor-inizio-18-04-2026/'
-            }  
-        ],
-        details: []
-    },
-    {
         status: 'TD1 Senderismo',
         startMonth: MONTHS.OCT,
         startYear: 2024,
@@ -157,17 +141,31 @@ export class Skills {
         details: []
     },
     {
+        status: COURSE.FIRST_AID_OUTDOOR,
+        startMonth: MONTHS.DEC,
+        startYear: 2023,
+        city: LOCATION.VERBIER,
+        nation: LOCATION.CH,
+        icon: ICONS.HEALTH,
+        color: COLOR.SECONDARY,
+        sites: [
+            {
+                name: COURSE.NUCO,
+                url: 'https://www.nucotraining.com/'
+            }  
+        ],
+        details: []
+    },
+    {
         status: 'Personal Trainer EQF Level 4',
-        startMonth: MONTHS.OCT,
-        startYear: 2024,
-        endMonth: MONTHS.NOV,
-        endYear: 2024,
+        startMonth: MONTHS.SEP,
+        startYear: 2020,
         icon: ICONS.RUNNING,
         color: COLOR.ACCENT,
         sites: [
             {
-                name: COURSE.ICEMP,
-                url: 'https://icempallars.net/estudi/cicle-inicial-de-grau-mitja-de-senderisme/'
+                name: COURSE.ALTO,
+                url: 'https://altorendimiento.com/'
             }, 
         ],
         details: []
