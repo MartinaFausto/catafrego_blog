@@ -110,7 +110,9 @@
         "Y3_Y15": "Istruttrice di gruppi categorie 3-15 anni",
         "OUTDOOR_GROUPS": "Supervisione delle attività, gestione dei gruppi e pianificazione degli itinerari nei campi estivi per scuole internazionali",
         "HOCKEY": "Preparatrice atletica di hockey indoor",
-        "SWIMMING": "Istruttrice di nuoto per bambini"
+        "SWIMMING": "Istruttrice di nuoto per bambini",
+        "NATURE": "Organizzazione di attività ambientali e didattica della natura",
+        "HIKING": "Pianificazione di itinerari trekking e conduzione di escursioni giornaliere e multi-day"
     },
     "EDUCATION": {
         "PROF": "Carriera di Scienze Motorie e Sportive",

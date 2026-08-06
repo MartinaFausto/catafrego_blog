@@ -28,7 +28,7 @@ export class WorkExperience {
                     url: 'https://ecoa.ad/'
                 }  
             ],
-            details: []
+            details: [WORK_DETAILS.HIKING, WORK_DETAILS.NATURE]
         },
         {
             status: WORK.FACILITATOR,
