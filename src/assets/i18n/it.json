@@ -98,7 +98,19 @@
         "ENTRENADORA": "Allenatrice e tecnico sportivo",
         "CLIMBING": "Istruttrice di arrampicata e responsabile",
         "GUIDE": "Guida di montagna",
-        "RECREATION": "Coordinatrice di attività ricreative e allenamento"
+        "RECREATION": "Coordinatrice di attività ricreative e allenamento",
+        "FACILITATOR": "Facilitatrice di attività outdoor"
+    },
+    "WORK_DETAILS": {
+        "HR": "Gestione del personale e risorse umane",
+        "RECEPTION": "Servizio clientie a accoglienza",
+        "CLIMBING": "Istruttrice di arrampicata per adulti e bambini",
+        "PRIV_CLASSES": "Istruttrice di lezioni private per bambini e per adulti di tutti i livelli",
+        "U10_U12": "Coordinatrice e  istruttrice di gruppi categorie U10-U12",
+        "Y3_Y15": "Istruttrice di gruppi categorie 3-15 anni",
+        "OUTDOOR_GROUPS": "Supervisione delle attività, gestione dei gruppi e pianificazione degli itinerari nei campi estivi per scuole internazionali",
+        "HOCKEY": "Preparatrice atletica di hockey indoor",
+        "SWIMMING": "Istruttrice di nuoto per bambini"
     },
     "EDUCATION": {
         "PROF": "Carriera di Scienze Motorie e Sportive",

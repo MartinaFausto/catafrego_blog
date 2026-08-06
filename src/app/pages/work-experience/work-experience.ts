@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Timeline } from '../../components/timeline/timeline';
-import { WORK, MONTHS, LOCATION } from '../../shared/const-translation';
+import { WORK, WORK_DETAILS, MONTHS, LOCATION } from '../../shared/const-translation';
 import { ICONS } from '../../shared/const-icons';
 import { COLOR } from '../../shared/const-styles';
 @Component({
@@ -31,7 +31,7 @@ export class WorkExperience {
             details: []
         },
         {
-            status: WORK.GUIDE,
+            status: WORK.FACILITATOR,
             startMonth: MONTHS.MAY,
             startYear: 2026,
             city: LOCATION.BUK,
@@ -40,11 +40,11 @@ export class WorkExperience {
             color: COLOR.PRIMARY,
             sites: [
                 {
-                    name: 'Jump Foundation',
+                    name: 'JUMP! Experiences',
                     url: 'https://jumpfoundation.org/programs/off-campus/'
                 }  
             ],
-            details: []
+            details: [WORK_DETAILS.OUTDOOR_GROUPS]
         },
         {
             status: WORK.SKI,
@@ -66,7 +66,7 @@ export class WorkExperience {
                     url: 'https://www.ordinoarcalis.com'
                 }  
             ],
-            details: []
+            details: [WORK_DETAILS.PRIV_CLASSES]
         },
         {
             status: WORK.GUIDE,
@@ -87,7 +87,7 @@ export class WorkExperience {
             details: []
         },
         {
-            status: WORK.GUIDE,
+            status: WORK.FACILITATOR,
             startMonth: MONTHS.SEP,
             startYear: 2024,
             city: LOCATION.ANNECY,
@@ -100,7 +100,7 @@ export class WorkExperience {
                     url: 'https://itsschooltrips.com/'
                 }
             ],
-            details: []
+            details: [WORK_DETAILS.OUTDOOR_GROUPS]
         },
         {
             status: WORK.GUIDE,
@@ -136,12 +136,12 @@ export class WorkExperience {
                     url: 'https://www.tripadvisor.it/Attraction_Review-g189180-d23551277-Reviews-MURUS_The_Climbing_Temple-Porto_Porto_District_Northern_Portugal.html'
                 } 
             ],
-            details: []
+            details: [WORK_DETAILS.HR, WORK_DETAILS.RECEPTION, WORK_DETAILS.CLIMBING]
         },
         {
             status: WORK.SKI,
             startMonth: MONTHS.NOV,
-            startYear: 2023,
+            startYear: 2022,
             endMonth: MONTHS.APR,
             endYear: 2024,
             city: LOCATION.VERBIER,
@@ -154,25 +154,7 @@ export class WorkExperience {
                     url: 'https://www.altitudeskischool.com'
                 } 
             ],
-            details: []
-        },
-        {
-            status: WORK.SKI,
-            startMonth: MONTHS.NOV,
-            startYear: 2022,
-            endMonth: MONTHS.APR,
-            endYear: 2023,
-            city: LOCATION.VERBIER,
-            nation: LOCATION.CH,
-            icon: ICONS.SKI,
-            color: COLOR.ACCENT,
-            sites: [
-                {
-                    name: 'Altitude Ski & Snowboard School',
-                    url: 'https://www.altitudeskischool.com'
-                } 
-            ],
-            details: []
+            details: [WORK_DETAILS.PRIV_CLASSES]
         },
         {
             status: WORK.SKI,
@@ -190,6 +172,7 @@ export class WorkExperience {
                     url: 'https://nbsjapan.com/niseko/'
                 }
             ],
+            details: [WORK_DETAILS.PRIV_CLASSES]
         },
         {
             status: WORK.ENTRENADORA,
@@ -225,7 +208,7 @@ export class WorkExperience {
                     url: 'http://www.pehuenes.com/index.html'
                 } 
             ],
-            details: []
+            details: [WORK_DETAILS.HOCKEY, WORK_DETAILS.SWIMMING, WORK_DETAILS.CLIMBING]
         },
         {
             status: WORK.SKI,
@@ -243,7 +226,7 @@ export class WorkExperience {
                     url: 'https://www.clubandino.org/'
                 } 
             ],
-            details: []
+            details: [WORK_DETAILS.Y3_Y15, WORK_DETAILS.U10_U12]
         }
   ];
 

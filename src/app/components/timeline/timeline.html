@@ -51,9 +51,9 @@
             @if (event.details) {
                 <ul class="mt-3 space-y-1">
                     @for (detail of event.details; track detail) {
-                        <li class="text-sm text-surface-500 dark:text-surface-400 flex items-center gap-2">
+                        <li class="text-sm text-accent flex items-center gap-2">
                             <svg data-p-icon="check-circle" class="text-xs"></svg>
-                            {{ detail }}
+                            {{ detail | translate}}
                         </li>
                     }
                 </ul>
