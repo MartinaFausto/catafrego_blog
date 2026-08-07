@@ -49,10 +49,10 @@ export class Header {
       label: 'SKILLS',
       route: '/'+ROUTES.SKILLS
     },
-    {
+    /*{
       label: 'DIARY',
       route: '/'+ROUTES.DIARY
-    },
+    },*/
     {
       label: 'CONTACTS',
       route: '/'+ROUTES.CONTACTS
