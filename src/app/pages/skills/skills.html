@@ -113,11 +113,15 @@
 <main class="max-w-5xl mx-auto px-4 sm:px-6">
     
     <div class="grid grid-cols-3 gap-6">
-        <p-card>
+
+        <p-card class="border border-secondary">
+
             <ng-template #title>
-                <div class="flex items-center gap-2">
-                    <span>{{ 'LANGUAGES' | translate }}</span>
+                <div class="bg-secondary text-white -mx-4 -mt-4 mb-4 px-4 py-3 flex items-center gap-2 rounded-t-lg font-semibold">
                     <i class="pi pi-language"></i>
+                    <span>
+                        {{ 'LANGUAGES' | translate }}
+                    </span>
                 </div>
             </ng-template>
 
@@ -127,62 +131,92 @@
 
                     <div class="max-w-sm w-full text-sm">
                         <div class="flex items-center justify-between gap-8">
-                            <span class="text-color font-medium">{{ 'LANGUAGE.' + language.label | translate }}</span>
-                            <span class="text-color">{{ 'LANGUAGE_LEVEL.' + language.level | translate }}</span>
+                            <span class="text-color font-medium">
+                                {{ 'LANGUAGE.' + language.label | translate }}
+                            </span>
+
+                            <span class="text-color">
+                                {{ 'LANGUAGE_LEVEL.' + language.level | translate }}
+                            </span>
                         </div>
                     </div>
+
                 }
 
             </div>
+
         </p-card>
 
+        <p-card class="border border-secondary">
 
-        <p-card>
             <ng-template #title>
-                <div class="flex items-center gap-2">
-                    <span>{{ 'MOBILITY' | translate }}</span>
+                <div class="bg-secondary text-white -mx-4 -mt-4 mb-4 px-4 py-3 flex items-center gap-2 rounded-t-lg font-semibold">
                     <i class="pi pi-car"></i>
+                    <span>
+                        {{ 'MOBILITY' | translate }}
+                    </span>
                 </div>
             </ng-template>
 
             <div class="flex flex-col gap-4">
+
+                <div class="max-w-sm w-full text-sm">
+                    <div class="flex items-center justify-between gap-8">
+                        <span class="text-color font-medium">
+                            {{ 'DRIVING_LICENCE.TITLE' | translate }}
+                        </span>
+
+                        <span class="text-color">
+                            {{ 'DRIVING_LICENCE.LICENCE' | translate }}
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+        </p-card>
+
+        <p-card class="border border-secondary">
+
+            <ng-template #title>
+                <div class="bg-secondary text-white -mx-4 -mt-4 mb-4 px-4 py-3 flex items-center gap-2 rounded-t-lg font-semibold">
+                    <i class="pi pi-globe"></i>
+                    <span>
+                        {{ 'DOCUMENTS' | translate }}
+                    </span>
+                </div>
+            </ng-template>
+
+            <ng-template #content>
+                <div class="flex flex-col gap-4">
 
                     <div class="max-w-sm w-full text-sm">
                         <div class="flex items-center justify-between gap-8">
-                            <span class="text-color font-medium">{{ 'DRIVING_LICENCE.TITLE' | translate }}</span>
-                            <span class="text-color">{{ 'DRIVING_LICENCE.LICENCE' | translate }}</span>
+                            <span class="text-color font-medium">
+                                {{ 'CITIZENSHIP.TITLE' | translate }}
+                            </span>
+                            <span class="text-color">
+                                {{ 'CITIZENSHIP.DATA' | translate }}
+                            </span>
                         </div>
                     </div>
 
-            </div>
-        </p-card>
+                    <div class="max-w-sm w-full text-sm">
+                        <div class="flex items-center justify-between gap-8">
+                            <span class="text-color font-medium">
+                                {{ 'RESIDENCE.TITLE' | translate }}
+                            </span>
+                            <span class="text-color">
+                                {{ 'RESIDENCE.DATA' | translate }}
+                            </span>
+                        </div>
+                    </div>
 
-        <p-card>
-            <ng-template #title>
-                <div class="flex items-center gap-2">
-                    <span>{{ 'DOCUMENTS' | translate }}</span>
-                    <i class="pi pi-globe"></i>
                 </div>
             </ng-template>
 
-            <div class="flex flex-col gap-4">
-
-                <div class="max-w-sm w-full text-sm">
-                    <div class="flex items-center justify-between gap-8">
-                        <span class="text-color font-medium">{{ 'CITIZENSHIP.TITLE' | translate }}</span>
-                        <span class="text-color">{{ 'CITIZENSHIP.DATA' | translate }}</span>
-                    </div>
-                </div>
-
-
-                <div class="max-w-sm w-full text-sm">
-                    <div class="flex items-center justify-between gap-8">
-                        <span class="text-color font-medium">{{ 'RESIDENCE.TITLE' | translate }}</span>
-                        <span class="text-color">{{ 'RESIDENCE.DATA' | translate }}</span>
-                    </div>
-                </div>
-            </div>
         </p-card>
+
     </div>
 </main>
 
