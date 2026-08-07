@@ -37,28 +37,62 @@
         </span>
     </ng-template>
     <ng-template #content let-event>
+
         <div class="p-5 rounded-xl bg-surface-0 dark:bg-surface-800 border border-accent shadow-sm mb-4 text-left">
-            <div class="hidden @max-[480px]:block mb-2 text-sm text-accent">
-                {{ 'MONTHS.' + event.startMonth | translate }} {{ event.startYear }}
-                @if (event.endMonth) {
-                    - {{ 'MONTHS.' + event.endMonth | translate }} {{ event.endYear }}
-                }
-                @if (event.seasons) {
-                    ( {{ event.seasons }} {{ 'SEASONS' | translate }})
-                }
-                ·
-                @if (event.nation) {
-                    {{ 'LOCATION.' + event.city | translate }}, 
-                    {{ 'LOCATION.' + event.nation | translate }}
-                }
-            </div>
-            <div class="flex items-center gap-3 mb-3">
+
+
+            <!-- Header desktop: solo status -->
+            <div 
+                [class]="'flex @max-[480px]:hidden -mx-5 -mt-5 mb-4 px-5 py-3 rounded-t-xl items-center gap-3 text-white font-bold ' + event.color">
+
                 @if (event.user) {
-                    <p-avatar [label]="event.user" shape="circle" class="bg-primary/10! text-primary! font-semibold!" />
+                    <p-avatar
+                        [label]="event.user"
+                        shape="circle"
+                        class="bg-white/20! text-white! font-semibold!" />
                 }
-                <span class="font-bold text-accent">{{ event.status | translate }}</span>
+
+                <span>
+                    {{ event.status | translate }}
+                </span>
+
             </div>
-            <span class="text-surface-600 dark:text-surface-300 text-sm leading-relaxed">{{ event.description }}</span>
+
+
+            <!-- Header mobile: status + date + location -->
+            <div 
+                [class]="'hidden @max-[480px]:flex flex-col gap-1 -mx-5 -mt-5 mb-4 px-5 py-3 rounded-t-xl text-white ' + event.color">
+
+                <span class="font-bold">
+                    {{ event.status | translate }}
+                </span>
+
+                <span class="text-sm">
+                    {{ 'MONTHS.' + event.startMonth | translate }} {{ event.startYear }}
+
+                    @if (event.endMonth) {
+                        - {{ 'MONTHS.' + event.endMonth | translate }} {{ event.endYear }}
+                    }
+
+                    @if (event.seasons) {
+                        ({{ event.seasons }} {{ 'SEASONS' | translate }})
+                    }
+                </span>
+
+                @if (event.nation) {
+                    <span class="text-sm">
+                        {{ 'LOCATION.' + event.city | translate }},
+                        {{ 'LOCATION.' + event.nation | translate }}
+                    </span>
+                }
+
+            </div>
+
+
+            <span class="text-surface-600 dark:text-surface-300 text-sm leading-relaxed">
+                {{ event.description }}
+            </span>
+
             @if (event.details) {
                 <ul class="mt-3 space-y-1">
                     @for (detail of event.details; track detail) {
@@ -92,15 +126,8 @@
 
                 </ul>
             }
-            @if (event.tracking) {
-                <div class="mt-4 p-3 rounded-lg bg-surface-100 dark:bg-surface-700 flex items-center justify-between">
-                    <span class="text-sm text-surface-600 dark:text-surface-300 flex items-center">
-                        <svg data-p-icon="map-marker" class="mr-2 shrink-0"></svg>
-                        Tracking: {{ event.tracking }}
-                    </span>
-                    <button type="button" pButton variant="text" size="small">Track</button>
-                </div>
-            }
+
         </div>
+
     </ng-template>
 </p-timeline>
