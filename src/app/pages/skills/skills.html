@@ -112,9 +112,9 @@
 
 <main class="max-w-5xl mx-auto px-4 sm:px-6">
     
-    <div class="grid grid-cols-3 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
 
-        <p-card class="border border-secondary">
+        <p-card styleClass="border border-secondary h-full">
 
             <ng-template #title>
                 <div class="bg-secondary text-white -mx-4 -mt-4 mb-4 px-4 py-3 flex items-center gap-2 rounded-t-lg font-semibold">
@@ -125,29 +125,31 @@
                 </div>
             </ng-template>
 
-            <div class="flex flex-col gap-4">
+            <ng-template #content>
+                <div class="flex flex-col gap-4">
 
-                @for (language of languages; track language.label) {
+                    @for (language of languages; track language.label) {
 
-                    <div class="max-w-sm w-full text-sm">
-                        <div class="flex items-center justify-between gap-8">
-                            <span class="text-color font-medium">
-                                {{ 'LANGUAGE.' + language.label | translate }}
-                            </span>
+                        <div class="w-full text-sm">
+                            <div class="flex items-center justify-between gap-8">
+                                <span class="text-color font-medium">
+                                    {{ 'LANGUAGE.' + language.label | translate }}
+                                </span>
 
-                            <span class="text-color">
-                                {{ 'LANGUAGE_LEVEL.' + language.level | translate }}
-                            </span>
+                                <span class="text-color">
+                                    {{ 'LANGUAGE_LEVEL.' + language.level | translate }}
+                                </span>
+                            </div>
                         </div>
-                    </div>
 
-                }
+                    }
 
-            </div>
+                </div>
+            </ng-template>
 
         </p-card>
 
-        <p-card class="border border-secondary">
+        <p-card styleClass="border border-secondary h-full">
 
             <ng-template #title>
                 <div class="bg-secondary text-white -mx-4 -mt-4 mb-4 px-4 py-3 flex items-center gap-2 rounded-t-lg font-semibold">
@@ -158,25 +160,29 @@
                 </div>
             </ng-template>
 
-            <div class="flex flex-col gap-4">
+            <ng-template #content>
+                <div class="flex flex-col gap-4">
 
-                <div class="max-w-sm w-full text-sm">
-                    <div class="flex items-center justify-between gap-8">
-                        <span class="text-color font-medium">
-                            {{ 'DRIVING_LICENCE.TITLE' | translate }}
-                        </span>
+                    <div class="w-full text-sm">
+                        <div class="flex items-center justify-between gap-8">
 
-                        <span class="text-color">
-                            {{ 'DRIVING_LICENCE.LICENCE' | translate }}
-                        </span>
+                            <span class="text-color font-medium">
+                                {{ 'DRIVING_LICENCE.TITLE' | translate }}
+                            </span>
+
+                            <span class="text-color">
+                                {{ 'DRIVING_LICENCE.LICENCE' | translate }}
+                            </span>
+
+                        </div>
                     </div>
-                </div>
 
-            </div>
+                </div>
+            </ng-template>
 
         </p-card>
 
-        <p-card class="border border-secondary">
+        <p-card styleClass="border border-secondary h-full">
 
             <ng-template #title>
                 <div class="bg-secondary text-white -mx-4 -mt-4 mb-4 px-4 py-3 flex items-center gap-2 rounded-t-lg font-semibold">
@@ -190,25 +196,32 @@
             <ng-template #content>
                 <div class="flex flex-col gap-4">
 
-                    <div class="max-w-sm w-full text-sm">
+                    <div class="w-full text-sm">
                         <div class="flex items-center justify-between gap-8">
+
                             <span class="text-color font-medium">
                                 {{ 'CITIZENSHIP.TITLE' | translate }}
                             </span>
+
                             <span class="text-color">
                                 {{ 'CITIZENSHIP.DATA' | translate }}
                             </span>
+
                         </div>
                     </div>
 
-                    <div class="max-w-sm w-full text-sm">
+
+                    <div class="w-full text-sm">
                         <div class="flex items-center justify-between gap-8">
+
                             <span class="text-color font-medium">
                                 {{ 'RESIDENCE.TITLE' | translate }}
                             </span>
+
                             <span class="text-color">
                                 {{ 'RESIDENCE.DATA' | translate }}
                             </span>
+
                         </div>
                     </div>
 
@@ -218,6 +231,7 @@
         </p-card>
 
     </div>
+
 </main>
 
 
