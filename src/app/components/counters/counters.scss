@@ -1,0 +1,13 @@
+.card-primary {
+    background-color: var(--color-primary) !important;
+}
+
+.card-primary .p-card-body,
+.card-primary .p-card-content {
+    background-color: var(--color-primary) !important;
+}
+
+.card-primary span,
+.card-primary i {
+    color: white;
+}
