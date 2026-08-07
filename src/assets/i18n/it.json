@@ -3,9 +3,19 @@
     "SEASONS": "stagioni",
     "MOBILITY": "Mobilità",
     "DOCUMENTS": "Documenti",
+    "ACADEMIC": "Formazione",
+    "QUALIFICATIONS": "Qualifiche",
     "DRIVING_LICENCE": {
         "TITLE": "Patente di guida",
         "LICENCE": "Categoria B Europea"
+    },
+    "CITIZENSHIP": {
+        "TITLE": "Cittadinanza",
+        "DATA": "Argentina e Italiana"
+    },
+    "RESIDENCE": {
+        "TITLE": "Residenza",
+        "DATA": "Italiana"
     },
     "LANGUAGE": {
         "EN": "Inglese",
@@ -34,7 +44,7 @@
     "PAGES": {
         "HOME": "Home",
         "WORK_EXPERIENCE": "Esperienze lavorative",
-        "SKILLS": "Skills e Qualifiche",
+        "SKILLS": "Corsi e Qualifiche",
         "DIARY": "Foto diario",
         "CONTACTS": "Contatti"
     },

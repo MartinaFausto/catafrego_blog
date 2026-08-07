@@ -20,7 +20,7 @@
     <section class="py-8">
         <div class="text-center">
             <h2 class="text-3xl font-bold">
-                Formazione
+                {{ 'ACADEMIC' | translate }}
             </h2>
         </div>
     </section>
@@ -38,7 +38,7 @@
     <section class="py-8">
         <div class="text-center">
             <h2 class="text-3xl font-bold">
-                Corsi e certificazioni
+                {{ 'QUALIFICATIONS' | translate }}
             </h2>
         </div>
     </section>
@@ -53,11 +53,9 @@
 
 
  
-
+<!--
 <div class="flex flex-col md:flex-row justify-center gap-6">
     
-
-    <!-- Colonna sinistra -->
     <div class="flex flex-col gap-6 w-full md:w-1/3">
 
         <p-card
@@ -94,13 +92,6 @@
     </div>
 
 
-    <!-- Divider verticale solo desktop -->
-    <p-divider
-        layout="vertical"
-        class="hidden md:flex">
-    </p-divider>
-
-    
     <p-card
         class="max-w-sm w-full min-h-[350px]"
         header="Outdoor Education">
@@ -116,99 +107,89 @@
 
 </div>
 
-<div class="flex flex-col md:flex-row justify-center gap-6">
+-->
+
+
+<main class="max-w-5xl mx-auto px-4 sm:px-6">
     
-    <p-card>
-        <ng-template #title>
-            <div class="flex items-center gap-2">
-                <span>{{ 'LANGUAGES' | translate }}</span>
-                <i class="pi pi-language"></i>
+    <div class="grid grid-cols-3 gap-6">
+        <p-card>
+            <ng-template #title>
+                <div class="flex items-center gap-2">
+                    <span>{{ 'LANGUAGES' | translate }}</span>
+                    <i class="pi pi-language"></i>
+                </div>
+            </ng-template>
+
+            <div class="flex flex-col gap-4">
+
+                @for (language of languages; track language.label) {
+
+                    <div class="max-w-sm w-full text-sm">
+                        <div class="flex items-center justify-between gap-8">
+                            <span class="text-color font-medium">{{ 'LANGUAGE.' + language.label | translate }}</span>
+                            <span class="text-color">{{ 'LANGUAGE_LEVEL.' + language.level | translate }}</span>
+                        </div>
+                    </div>
+                }
+
             </div>
-        </ng-template>
+        </p-card>
 
-        <div class="flex flex-col gap-4">
 
-            @for (language of languages; track language.label) {
+        <p-card>
+            <ng-template #title>
+                <div class="flex items-center gap-2">
+                    <span>{{ 'MOBILITY' | translate }}</span>
+                    <i class="pi pi-car"></i>
+                </div>
+            </ng-template>
+
+            <div class="flex flex-col gap-4">
+
+                    <div class="max-w-sm w-full text-sm">
+                        <div class="flex items-center justify-between gap-8">
+                            <span class="text-color font-medium">{{ 'DRIVING_LICENCE.TITLE' | translate }}</span>
+                            <span class="text-color">{{ 'DRIVING_LICENCE.LICENCE' | translate }}</span>
+                        </div>
+                    </div>
+
+            </div>
+        </p-card>
+
+        <p-card>
+            <ng-template #title>
+                <div class="flex items-center gap-2">
+                    <span>{{ 'DOCUMENTS' | translate }}</span>
+                    <i class="pi pi-globe"></i>
+                </div>
+            </ng-template>
+
+            <div class="flex flex-col gap-4">
 
                 <div class="max-w-sm w-full text-sm">
                     <div class="flex items-center justify-between gap-8">
-                        <span class="text-color font-medium">{{ 'LANGUAGE.' + language.label | translate }}</span>
-                        <span class="text-color">{{ 'LANGUAGE_LEVEL.' + language.level | translate }}</span>
+                        <span class="text-color font-medium">{{ 'CITIZENSHIP.TITLE' | translate }}</span>
+                        <span class="text-color">{{ 'CITIZENSHIP.DATA' | translate }}</span>
                     </div>
                 </div>
-            }
 
-        </div>
-    </p-card>
-
-    <!-- Divider verticale solo desktop -->
-    <p-divider
-        layout="vertical"
-        class="hidden md:flex">
-    </p-divider>
-
-    <p-card>
-        <ng-template #title>
-            <div class="flex items-center gap-2">
-                <span>{{ 'MOBILITY' | translate }}</span>
-                <i class="pi pi-car"></i>
-            </div>
-        </ng-template>
-
-        <div class="flex flex-col gap-4">
 
                 <div class="max-w-sm w-full text-sm">
                     <div class="flex items-center justify-between gap-8">
-                        <span class="text-color font-medium">{{ 'DRIVING_LICENCE.TITLE' | translate }}</span>
-                        <span class="text-color">{{ 'DRIVING_LICENCE.LICENCE' | translate }}</span>
+                        <span class="text-color font-medium">{{ 'RESIDENCE.TITLE' | translate }}</span>
+                        <span class="text-color">{{ 'RESIDENCE.DATA' | translate }}</span>
                     </div>
                 </div>
-
-        </div>
-    </p-card>
-
-    <!-- Divider verticale solo desktop -->
-    <p-divider
-        layout="vertical"
-        class="hidden md:flex">
-    </p-divider>
-
-    <p-card>
-        <ng-template #title>
-            <div class="flex items-center gap-2">
-                <span>{{ 'DOCUMENTS' | translate }}</span>
-                <i class="pi pi-globe"></i>
             </div>
-        </ng-template>
+        </p-card>
+    </div>
+</main>
 
-        <div class="flex flex-col gap-4">
-
-            @for (language of languages; track language.label) {
-
-                <div class="max-w-sm w-full text-sm">
-                    <div class="flex items-center justify-between gap-8">
-                        <span class="text-color font-medium">{{ 'LANGUAGE.' + language.label | translate }}</span>
-                        <span class="text-color">{{ 'LANGUAGE_LEVEL.' + language.level | translate }}</span>
-                    </div>
-                </div>
-            }
-
-        </div>
-    </p-card>
-</div>
 
 <main class="max-w-5xl mx-auto px-4 sm:px-6">
 
-    <section class="py-8">
-        <div class="text-center">
-            <h2 class="text-3xl font-bold">
-                Scarica il mio curriculum vitae
-            </h2>
-        </div>
-
-    </section>
-
-    <section class="flex justify-center">
+    <section class="flex justify-center py-8">
         <app-cv-downloader></app-cv-downloader>
     </section>
     
