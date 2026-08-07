@@ -69,7 +69,7 @@ export class WorkExperience {
             details: [WORK_DETAILS.PRIV_CLASSES]
         },
         {
-            status: WORK.GUIDE,
+            status: WORK.FACILITATOR,
             startMonth: MONTHS.JUL,
             startYear: 2025,
             endMonth: MONTHS.AUG,
@@ -103,7 +103,7 @@ export class WorkExperience {
             details: [WORK_DETAILS.OUTDOOR_GROUPS]
         },
         {
-            status: WORK.GUIDE,
+            status: WORK.FACILITATOR,
             startMonth: MONTHS.JUL,
             startYear: 2024,
             endMonth: MONTHS.AUG,
