@@ -19,13 +19,13 @@ export class Counters implements AfterViewInit {
   stats = [
     {
       icon: 'pi-calendar',
-      value: 10,
+      value: 14,
       suffix: '+',
       label: 'COUNTERS.1'
     },
     {
       icon: 'pi-map',
-      value: 540,
+      value: 6,
       suffix: '+',
       label: 'COUNTERS.2'
     },
@@ -37,7 +37,7 @@ export class Counters implements AfterViewInit {
     },
     {
       icon: 'pi-verified',
-      value: 6,
+      value: 7,
       suffix: '',
       label: 'COUNTERS.4'
     }

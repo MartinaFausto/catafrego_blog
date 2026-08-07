@@ -159,7 +159,7 @@ export class MapsWork implements AfterViewInit, OnDestroy {
         }
       },
       {
-        title: "Murus Climbing Temple",
+        title: "Villa Nova de Gaia",
         geometry: {
           type: "Point",
           coordinates: [-8.60003, 41.11863]
