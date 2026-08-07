@@ -6,15 +6,17 @@
     {{ 'DOWNLOAD_CV' | translate }}
 </button>
 
-<p-tieredmenu #menu [model]="items" [popup]="true">
-    <ng-template #item let-item>
-        <div class="flex items-center gap-2">
-        <img
-            [src]="'assets/flags/'+item.icon+'.gif'"
-            class="w-5 h-5"
-            [alt]="item.label">
+<p-tieredmenu #menu 
+    [model]="items"
+    [popup]="true">
 
-        <span>{{ 'LANGUAGE.' + item.label | translate }}</span>
-        </div>
-    </ng-template>
+        <ng-template #item let-item>
+            <div class="flex items-center gap-2">
+            <img
+                [src]="'assets/flags/'+item.icon+'.gif'"
+                class="w-5 h-5"
+                [alt]="item.label">
+            </div>
+        </ng-template>
+        
 </p-tieredmenu>
