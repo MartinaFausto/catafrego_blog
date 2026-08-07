@@ -5,10 +5,18 @@
     [pt]="{ event: { class: '@max-[480px]:flex-row!' }, eventOpposite: { class: '@max-[480px]:hidden' }, eventContent: { class: '@max-[480px]:text-left!' }, eventConnector: { class: 'mb-4' } }"
 >
     <ng-template #opposite let-event>
-        <div class="font-medium text-accent">
-            {{ 'MONTHS.' + event.startMonth | translate }} {{ event.startYear }}
-            @if (event.endMonth) {
-            - {{ 'MONTHS.' + event.endMonth | translate }} {{ event.endYear }}
+        <div class="inline-flex items-baseline gap-2">
+            <div class="font-medium text-accent">
+                {{ 'MONTHS.' + event.startMonth | translate }} {{ event.startYear }}
+                @if (event.endMonth) {
+                - {{ 'MONTHS.' + event.endMonth | translate }} {{ event.endYear }}
+                }
+                
+            </div>
+            @if (event.seasons) {
+                <div class="text-sm text-accent">
+                    ({{ event.seasons }} {{ 'SEASONS' | translate }})
+                </div>
             }
         </div>
         <div class="text-sm text-accent">
@@ -33,7 +41,10 @@
             <div class="hidden @max-[480px]:block mb-2 text-sm text-accent">
                 {{ 'MONTHS.' + event.startMonth | translate }} {{ event.startYear }}
                 @if (event.endMonth) {
-                - {{ 'MONTHS.' + event.endMonth | translate }} {{ event.endYear }}
+                    - {{ 'MONTHS.' + event.endMonth | translate }} {{ event.endYear }}
+                }
+                @if (event.seasons) {
+                    ( {{ event.seasons }} {{ 'SEASONS' | translate }})
                 }
                 ·
                 @if (event.nation) {

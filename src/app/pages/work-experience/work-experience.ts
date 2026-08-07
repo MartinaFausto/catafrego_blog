@@ -136,7 +136,8 @@ export class WorkExperience {
                     url: 'https://www.tripadvisor.it/Attraction_Review-g189180-d23551277-Reviews-MURUS_The_Climbing_Temple-Porto_Porto_District_Northern_Portugal.html'
                 } 
             ],
-            details: [WORK_DETAILS.HR, WORK_DETAILS.RECEPTION, WORK_DETAILS.CLIMBING]
+            details: [WORK_DETAILS.HR, WORK_DETAILS.RECEPTION, WORK_DETAILS.CLIMBING],
+            seasons: 3
         },
         {
             status: WORK.SKI,
@@ -154,7 +155,8 @@ export class WorkExperience {
                     url: 'https://www.altitudeskischool.com'
                 } 
             ],
-            details: [WORK_DETAILS.PRIV_CLASSES]
+            details: [WORK_DETAILS.PRIV_CLASSES],
+            seasons: 2
         },
         {
             status: WORK.SKI,
@@ -208,7 +210,8 @@ export class WorkExperience {
                     url: 'http://www.pehuenes.com/index.html'
                 } 
             ],
-            details: [WORK_DETAILS.HOCKEY, WORK_DETAILS.SWIMMING, WORK_DETAILS.CLIMBING]
+            details: [WORK_DETAILS.HOCKEY, WORK_DETAILS.SWIMMING, WORK_DETAILS.CLIMBING],
+            seasons: 2
         },
         {
             status: WORK.SKI,
@@ -226,7 +229,8 @@ export class WorkExperience {
                     url: 'https://www.clubandino.org/'
                 } 
             ],
-            details: [WORK_DETAILS.Y3_Y15, WORK_DETAILS.U10_U12]
+            details: [WORK_DETAILS.Y3_Y15, WORK_DETAILS.U10_U12],
+            seasons: 8
         }
   ];
 
