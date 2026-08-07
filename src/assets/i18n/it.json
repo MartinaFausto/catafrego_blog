@@ -78,7 +78,8 @@
         "HU": "Ungheria",
         "CZ": "Repubblica Ceca",
         "BUK": "Bukk",
-        "VILLANOVA": "Villanova de Gaia"
+        "VILLANOVA": "Villanova de Gaia",
+        "PIRENEOS": "Pirenei"
     },
     "MONTHS": {
         "JAN": "Gen",
@@ -118,11 +119,22 @@
     "EDUCATION": {
         "PROF": "Carriera di Scienze Motorie e Sportive",
         "SKI": "Istruttrice di Sci Livello 3",
-        "COLEGIO": "Scuola secondaria superiore"
+        "COLEGIO": "Scuola secondaria superiore",
+        "TD2": "Guida di Media Montagna - Livello 2 (TD2)",
+        "SECONDARY": "Colegio San Patricio - Diploma di scuola superiore",
+        "AADIDESS": "Istituto Superiore di Sci e Snowboard (AADIDESS)",
+        "UNCO": "Università Nazionale del Comahue (UNCo)",
+        "ISIA": "Bollino ISIA - Associazione Internazionale degli Istruttori di Sci"
     },
     "COURSE": {
         "FIRST_AID_OUTDOOR": "Primo Soccorso Outdoor",
         "AIGAE": "AIGAE: Associazione Italiana Guide Ambientali Escursionistiche",
-        "ICEMP": "ICEMP: Istituto Centro di Sport di Montagna del Pallars"
+        "ICEMP": "ICEMP: Istituto Centro di Sport di Montagna del Pallars",
+        "CAG": "Corso Valanghe per Guide (CAG) – Livello 1",
+        "ALTO": "Alto Rendimiento",
+        "ACNA": "ACNA – Associazione Conoscenza Neve e Valanghe",
+        "PERSONAL_TRAINER": "Personal Trainer qualificato – Livello EQF 4",
+        "NUCO": "Nuco Training",
+        "TD1": "Tecnico di Escursionismo – Livello 1 (TD1)"
     }
 }

@@ -1,3 +1,5 @@
+import { add } from "@amcharts/amcharts5/.internal/core/util/Time";
+
 export const MONTHS = {
     JAN: 'JAN',
     FEB: 'FEB',
@@ -40,6 +42,11 @@ export const EDUCATION = {
     PROF: 'EDUCATION.PROF',
     SKI: 'EDUCATION.SKI',
     COLEGIO: 'EDUCATION.COLEGIO',
+    TD2: 'EDUCATION.TD2',
+    SECONDARY: 'EDUCATION.SECONDARY',
+    AADIDESS: 'EDUCATION.AADIDESS',
+    UNCO: 'EDUCATION.UNCO',
+    ISIA: 'EDUCATION.ISIA'
 }
 
 export const COURSE = {
@@ -49,6 +56,9 @@ export const COURSE = {
     NUCO: 'COURSE.NUCO',
     ALTO: 'COURSE.ALTO',
     ACNA: 'COURSE.ACNA',
+    CAG: 'COURSE.CAG',
+    PERSONAL_TRAINER: 'COURSE.PERSONAL_TRAINER',
+    TD1: 'COURSE.TD1'
 }
 
 export const LANGUAGE_LEVEL = {
