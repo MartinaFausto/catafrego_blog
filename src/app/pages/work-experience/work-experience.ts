@@ -70,24 +70,6 @@ export class WorkExperience {
         },
         {
             status: WORK.FACILITATOR,
-            startMonth: MONTHS.JUL,
-            startYear: 2025,
-            endMonth: MONTHS.AUG,
-            endYear: 2025,
-            city: LOCATION.VERBIER,
-            nation: LOCATION.CH,
-            icon: ICONS.HIKING,
-            color: COLOR.PRIMARY,
-            sites: [
-                {
-                    name: 'Altitude Summer Camps',
-                    url: 'https://www.altitude-camps.com/'
-                }
-            ],
-            details: []
-        },
-        {
-            status: WORK.FACILITATOR,
             startMonth: MONTHS.SEP,
             startYear: 2024,
             city: LOCATION.ANNECY,
@@ -107,7 +89,7 @@ export class WorkExperience {
             startMonth: MONTHS.JUL,
             startYear: 2024,
             endMonth: MONTHS.AUG,
-            endYear: 2024,
+            endYear: 2025,
             city: LOCATION.VERBIER,
             nation: LOCATION.CH,
             icon: ICONS.HIKING,
@@ -118,7 +100,8 @@ export class WorkExperience {
                     url: 'https://www.altitude-camps.com/'
                 }
             ],
-            details: []
+            details: [WORK_DETAILS.Y15_Y18, WORK_DETAILS.Y3_Y6],
+            seasons: 2
         },
         {
             status: WORK.CLIMBING,

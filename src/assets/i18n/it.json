@@ -129,8 +129,10 @@
         "NATURE": "Organizzazione di attività ambientali e didattica della natura",
         "HIKING": "Pianificazione di itinerari trekking e conduzione di escursioni giornaliere e multi-day",
         "PRE_POLLETS": "Allenatrice di sci alpino e responsabile di categoria Pre-Pollets (4-6 anni)",
-        "OUTDOOR_ACTIVITIES": "Organizzazione e conduzione di attività outdoor: trekking, roller ski, MTB, arrampicata e campeggio"
-    },
+        "OUTDOOR_ACTIVITIES": "Organizzazione e conduzione di attività outdoor: trekking, roller ski, MTB, arrampicata e campeggio",
+        "Y15_Y18": "Leader delle attività nel campo estivo dell'Orchestra Junior di Verbier per ragazzi dai 15 ai 18 anni",
+        "Y3_Y6": "Leader delle attività nel campo estivo per bambini dai 3 ai 6 anni"
+    },  
     "EDUCATION": {
         "PROF": "Carriera di Scienze Motorie e Sportive",
         "SKI": "Istruttrice di Sci Livello 3",
