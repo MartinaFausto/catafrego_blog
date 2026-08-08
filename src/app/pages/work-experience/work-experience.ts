@@ -47,7 +47,7 @@ export class WorkExperience {
             details: [WORK_DETAILS.OUTDOOR_GROUPS]
         },
         {
-            status: WORK.SKI,
+            status: WORK.SKI_ENTR,
             startMonth: MONTHS.NOV,
             startYear: 2025,
             endMonth: MONTHS.APR,
@@ -66,7 +66,7 @@ export class WorkExperience {
                     url: 'https://www.ordinoarcalis.com'
                 }  
             ],
-            details: [WORK_DETAILS.PRIV_CLASSES]
+            details: [WORK_DETAILS.PRE_POLLETS, WORK_DETAILS.PRIV_CLASSES]
         },
         {
             status: WORK.FACILITATOR,
@@ -192,7 +192,7 @@ export class WorkExperience {
                     url: 'https://www.clubandino.org/'
                 } 
             ],
-            details: []
+            details: [WORK_DETAILS.U8_U16, WORK_DETAILS.OUTDOOR_ACTIVITIES]
         },
         {
             status: WORK.ENTRENADORA,

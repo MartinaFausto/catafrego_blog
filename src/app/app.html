@@ -1,4 +1,11 @@
-<app-header></app-header>
-<main class="h-[calc(100dvh-4rem)]">
-    <router-outlet></router-outlet>
-</main>
+<div class="min-h-dvh flex flex-col">
+
+    <app-header></app-header>
+
+    <main class="flex-1">
+        <router-outlet></router-outlet>
+    </main>
+
+    <app-footer></app-footer>
+
+</div>

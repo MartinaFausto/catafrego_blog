@@ -31,7 +31,7 @@ export class Counters implements AfterViewInit {
     },
     {
       icon: 'pi-compass',
-      value: 82,
+      value: 150,
       suffix: '+',
       label: 'COUNTERS.3'
     },

@@ -54,7 +54,7 @@
         "PLACE": "Ogni luogo lascia un segno",
         "PLACE_SUBTITLE": "I Paesi evidenziati sulla mappa rappresentano i luoghi in cui ho avuto l'opportunità di lavorare e crescere. Ognuno di essi ha contribuito a sviluppare nuove competenze, una maggiore capacità di adattamento e una visione più internazionale del mio percorso professionale.",
         "MY_STORY": "La mia storia",
-        "MY_STORY_SUBTITLE": "La mia storia nasce a Bariloche, nel cuore della Patagonia argentina, un luogo dove la montagna, la natura e lo sport fanno parte della vita quotidiana."
+        "MY_STORY_SUBTITLE": "La mia storia nasce a Bariloche, nel cuore della Patagonia argentina, un luogo dove la montagna, la natura e lo sport fanno parte della vita quotidiana. Crescere tra i laghi e le vette patagoniche ha segnato fin da subito la mia strada, trasformando una passione d'infanzia nella mia professione. Nel corso degli anni ho portato la mia esperienza in giro per il mondo — dalla Svizzera al Giappone, passando per Andorra, la Francia e l'Italia. Oggi sono Istruttrice di Sci (ISIA Card) e Guida di Media Montagna (TD2). Il mio obiettivo? Aiutare le persone a vivere la montagna in sicurezza, che sia muovendo i primi passi sugli sci, esplorando sentieri alpini o semplicemente imparando a rispettare e ascoltare la natura."
     },
     "SKILL": {
         "TREK": "Conduzione trekking giornalieri e multi-day",
@@ -108,6 +108,7 @@
     },
     "WORK": {
         "SKI": "Istruttrice di sci",
+        "SKI_ENTR": "Allenatrice e istruttrice di sci",
         "ENTRENADORA": "Allenatrice e tecnico sportivo",
         "CLIMBING": "Istruttrice di arrampicata e responsabile",
         "GUIDE": "Guida di montagna",
@@ -120,12 +121,15 @@
         "CLIMBING": "Istruttrice di arrampicata per adulti e bambini",
         "PRIV_CLASSES": "Istruttrice di lezioni private per bambini e per adulti di tutti i livelli",
         "U10_U12": "Coordinatrice e  istruttrice di gruppi categorie U10-U12",
+        "U8_U16": "Coordinatrice e allenatrice per la preparazione fisica di gruppi di categorie U8-U16",
         "Y3_Y15": "Istruttrice di gruppi categorie 3-15 anni",
         "OUTDOOR_GROUPS": "Supervisione delle attività, gestione dei gruppi e pianificazione degli itinerari nei campi estivi per scuole internazionali",
         "HOCKEY": "Preparatrice atletica di hockey indoor",
         "SWIMMING": "Istruttrice di nuoto per bambini",
         "NATURE": "Organizzazione di attività ambientali e didattica della natura",
-        "HIKING": "Pianificazione di itinerari trekking e conduzione di escursioni giornaliere e multi-day"
+        "HIKING": "Pianificazione di itinerari trekking e conduzione di escursioni giornaliere e multi-day",
+        "PRE_POLLETS": "Allenatrice di sci alpino e responsabile di categoria Pre-Pollets (4-6 anni)",
+        "OUTDOOR_ACTIVITIES": "Organizzazione e conduzione di attività outdoor: trekking, roller ski, MTB, arrampicata e campeggio"
     },
     "EDUCATION": {
         "PROF": "Carriera di Scienze Motorie e Sportive",
