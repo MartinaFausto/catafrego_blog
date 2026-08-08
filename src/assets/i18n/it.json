@@ -5,6 +5,7 @@
     "DOCUMENTS": "Documenti",
     "ACADEMIC": "Formazione",
     "QUALIFICATIONS": "Qualifiche",
+    "DEFINITION": "Istruttrice di Sci ISIA & Guida di Media Montagna TD2",
     "DRIVING_LICENCE": {
         "TITLE": "Patente di guida",
         "LICENCE": "Categoria B Europea"
@@ -49,8 +50,8 @@
         "CONTACTS": "Contatti"
     },
     "HOME": {
-        "HELLO": "Ciao, sono Catalina!",
-        "HELLO_SUBTITLE": "La montagna non è solo un luogo: è il mio modo di vivere. Porto le persone alla scoperta di ambienti naturali, dalla tranquillità dei sentieri alla magia della neve, trasformando ogni uscita in un'esperienza da ricordare.",
+        "HELLO": "La montagna non è solo un luogo: è il mio modo di vivere",
+        "HELLO_SUBTITLE": "Porto le persone alla scoperta di ambienti naturali, dalla tranquillità dei sentieri alla magia della neve, trasformando ogni uscita in un'esperienza da ricordare.",
         "PLACE": "Ogni luogo lascia un segno",
         "PLACE_SUBTITLE": "I Paesi evidenziati sulla mappa rappresentano i luoghi in cui ho avuto l'opportunità di lavorare e crescere. Ognuno di essi ha contribuito a sviluppare nuove competenze, una maggiore capacità di adattamento e una visione più internazionale del mio percorso professionale.",
         "MY_STORY": "La mia storia",
