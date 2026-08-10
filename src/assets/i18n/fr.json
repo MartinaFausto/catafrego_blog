@@ -1,0 +1,158 @@
+{
+    "LANGUAGES": "Langues parlées",
+    "SEASONS": "Saisons",
+    "MOBILITY": "Mobilité",
+    "DOCUMENTS": "Documents",
+    "ACADEMIC": "Formation",
+    "QUALIFICATIONS": "Qualifications",
+    "DEFINITION": "Monitrice de Ski ISIA & Accompagnatrice en Moyenne Montagne TD2",
+    "DRIVING_LICENCE": {
+        "TITLE": "Permis de conduire",
+        "LICENCE": "Catégorie B Européenne"
+    },
+    "CITIZENSHIP": {
+        "TITLE": "Nationalité",
+        "DATA": "Argentine et Italienne"
+    },
+    "RESIDENCE": {
+        "TITLE": "Résidence",
+        "DATA": "Italienne"
+    },
+    "LANGUAGE": {
+        "EN": "Anglais",
+        "ES": "Espagnol",
+        "IT": "Italien",
+        "DE": "Allemand",
+        "PT": "Portugais",
+        "FR": "Français"
+    },
+    "LANGUAGE_LEVEL": {
+        "A1": "Débutant",
+        "A2": "Élémentaire",
+        "B1": "Intermédiaire",
+        "B2": "Intermédiaire avancé",
+        "C1": "Avancé",
+        "C2": "Maîtrise",
+        "N": "Langue maternelle"
+    },
+    "DOWNLOAD_CV": "Télécharger le CV",
+    "COUNTERS": {
+        "1": "Années Outdoor",
+        "2": "Pays",
+        "3": "Randonnées",
+        "4": "Qualifications"
+    },
+    "PAGES": {
+        "HOME": "Accueil",
+        "WORK_EXPERIENCE": "Expériences professionnelles",
+        "SKILLS": "Formations et Qualifications",
+        "DIARY": "Journal photo",
+        "CONTACTS": "Contact"
+    },
+    "HOME": {
+        "HELLO": "La montagne n'est pas seulement un lieu : c'est mon mode de vie",
+        "HELLO_SUBTITLE": "Professionnelle de la montagne titulaire d'une double qualification officielle (Ski Alpin & Randonnée). Je mets mon expérience au service des écoles de ski et des organisations outdoor avec un objectif clair : transmettre la passion de la nature, garantir une sécurité maximale et créer des expériences inoubliables pour petits et grands.",
+        "PLACE": "Chaque endroit laisse une empreinte",
+        "PLACE_SUBTITLE": "Les pays mis en évidence sur la carte représentent les lieux où j'ai eu l'opportunité de travailler et d'évoluer. Chacun d'entre eux a contribué à développer de nouvelles compétences, une plus grande capacité d'adaptation et une vision plus internationale de mon parcours professionnel.",
+        "MY_STORY": "Mon histoire",
+        "MY_STORY_SUBTITLE": "Mon histoire commence à Bariloche, au cœur de la Patagonie argentine, un endroit où la montagne, la nature et le sport font partie du quotidien. Grandir entre les lacs et les sommets patagoniens a très tôt tracé ma voie, transformant une passion d'enfance en ma profession. Au fil des ans, j'ai apporté mon expérience à travers le monde — de la Suisse au Japon, en passant par Andorre, la France et l'Italie. Aujourd'hui, je suis Monitrice de Ski (Tampoin ISIA) et Accompagnatrice en Moyenne Montagne (TD2). Mon objectif ? Aider les gens à vivre la montagne en toute sécurité, que ce soit pour faire leurs premiers pas à ski, explorer des sentiers alpins ou simplement apprendre à respecter et écouter la nature."
+    },
+    "SKILL": {
+        "TREK": "Encadrement de trekkings à la journée et itinérants",
+        "PLAN": "Planification d'itinéraires",
+        "RISK": "Gestion du risque en milieu montagnard",
+        "MAP": "Orientation et cartographie",
+        "LEADER": "Encadrement de groupes internationaux",
+        "EM": "Gestion des urgences"
+    },
+    "CONTACTS": {
+        "TITLE": "Prêt pour la prochaine aventure ?",
+        "SUBTITLE": "Que vous cherchiez une monitrice pour la saison hivernale ou une guide pour vos randonnées estivales, parlons de votre projet !"
+    },
+    "LOCATION": {
+        "JP": "Japon",
+        "NISEKO": "Niseko",
+        "CH": "Suisse",
+        "VERBIER": "Verbier",
+        "AD": "Andorre",
+        "GRANDVALIRA": "Grandvalira",
+        "ORDINO": "Ordino Arcalís",
+        "AG": "Argentine",
+        "BARILOCHE": "Bariloche",
+        "PT": "Portugal",
+        "PORTO": "Porto",
+        "FR": "France",
+        "ANNECY": "Annecy",
+        "SP": "Espagne",
+        "POBLA": "La Pobla de Segur",
+        "IT": "Italie",
+        "PARMA": "Parme",
+        "HU": "Hongrie",
+        "CZ": "République Tchèque",
+        "BUK": "Bükk",
+        "VILLANOVA": "Vila Nova de Gaia",
+        "PIRENEOS": "Pyrénées"
+    },
+    "MONTHS": {
+        "JAN": "Jan",
+        "FEB": "Fév",
+        "MAR": "Mar",
+        "APR": "Avr",
+        "MAY": "Mai",
+        "JUN": "Juin",
+        "JUL": "Juil",
+        "AUG": "Août",
+        "SEP": "Sep",
+        "OCT": "Oct",
+        "NOV": "Nov",
+        "DEC": "Déc"
+    },
+    "WORK": {
+        "SKI": "Monitrice de ski",
+        "SKI_ENTR": "Entraîneuse et monitrice de ski",
+        "ENTRENADORA": "Entraîneuse et technicienne sportive",
+        "CLIMBING": "Monitrice d'escalade et responsable",
+        "GUIDE": "Guide de montagne",
+        "RECREATION": "Coordinatrice d'activités récréatives et d'entraînement",
+        "FACILITATOR": "Animatrice d'activités outdoor"
+    },
+    "WORK_DETAILS": {
+        "HR": "Gestion du personnel et ressources humaines",
+        "RECEPTION": "Service client et accueil",
+        "CLIMBING": "Monitrice d'escalade pour adultes et enfants",
+        "PRIV_CLASSES": "Monitrice de cours particuliers pour enfants et adultes de tous niveaux",
+        "U10_U12": "Coordinatrice et monitrice de groupes catégories U10-U12",
+        "U8_U16": "Coordinatrice et entraîneuse pour la préparation physique de groupes catégories U8-U16",
+        "Y3_Y15": "Monitrice de groupes catégories 3-15 ans",
+        "OUTDOOR_GROUPS": "Supervision des activités, gestion de groupes et planification d'itinéraires en camps d'été pour écoles internationales",
+        "HOCKEY": "Préparatrice physique de hockey en salle",
+        "SWIMMING": "Monitrice de natation pour enfants",
+        "NATURE": "Organisation d'activités environnementales et pédagogie de la nature",
+        "HIKING": "Planification d'itinéraires de trekking et encadrement de randonnées à la journée et sur plusieurs jours",
+        "PRE_POLLETS": "Entraîneuse de ski alpin et responsable de la catégorie Pre-Pollets (4-6 ans)",
+        "OUTDOOR_ACTIVITIES": "Organisation et encadrement d'activités outdoor : trekking, roller ski, VTT, escalade et camping",
+        "Y15_Y18": "Responsable d'activités au camp d'été de l'Orchestre Junior de Verbier pour les 15-18 ans",
+        "Y3_Y6": "Responsable d'activités au camp d'été pour les 3-6 ans"
+    },
+    "EDUCATION": {
+        "PROF": "Licence en Sciences et Techniques des Activités Physiques et Sportives (STAPS)",
+        "SKI": "Monitrice de Ski Niveau 3",
+        "COLEGIO": "Enseignement secondaire supérieur",
+        "TD2": "Accompagnatrice en Moyenne Montagne - Niveau 2 (TD2)",
+        "SECONDARY": "Colegio San Patricio - Diplôme de fin d'études secondaires",
+        "AADIDESS": "Institut Supérieur de Ski et Snowboard (AADIDESS)",
+        "UNCO": "Université Nationale du Comahue (UNCo)",
+        "ISIA": "Tampon ISIA - Association Internationale des Moniteurs de Ski"
+    },
+    "COURSE": {
+        "FIRST_AID_OUTDOOR": "Premiers Secours Outdoor",
+        "AIGAE": "AIGAE : Association Italienne des Guides Accompagnateurs en Nature",
+        "ICEMP": "ICEMP : Institut Centre des Sports de Montagne du Pallars",
+        "CAG": "Cours Avalanche pour Guides (CAG) – Niveau 1",
+        "ALTO": "Haut Rendement",
+        "ACNA": "ACNA – Association pour la Connaissance de la Neige et des Avalanches",
+        "PERSONAL_TRAINER": "Coach Personnel qualifié – Niveau EQF 4",
+        "NUCO": "Nuco Training",
+        "TD1": "Technicien de Randonnée – Niveau 1 (TD1)"
+    }
+}

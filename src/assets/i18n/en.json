@@ -1,5 +1,23 @@
 {
     "LANGUAGES": "Spoken languages",
+    "SEASONS": "Seasons",
+    "MOBILITY": "Mobility",
+    "DOCUMENTS": "Documents",
+    "ACADEMIC": "Education",
+    "QUALIFICATIONS": "Qualifications",
+    "DEFINITION": "ISIA Ski Instructor & TD2 Mountain Leader",
+    "DRIVING_LICENCE": {
+        "TITLE": "Driving licence",
+        "LICENCE": "European Category B"
+    },
+    "CITIZENSHIP": {
+        "TITLE": "Citizenship",
+        "DATA": "Argentine and Italian"
+    },
+    "RESIDENCE": {
+        "TITLE": "Residence",
+        "DATA": "Italian"
+    },
     "LANGUAGE": {
         "EN": "English",
         "ES": "Spanish",
@@ -12,21 +30,35 @@
         "A1": "Beginner",
         "A2": "Elementary",
         "B1": "Intermediate",
-        "B2": "Upper-intermediate",
+        "B2": "Upper intermediate",
         "C1": "Advanced",
-        "C2": "Language proficiency",
-        "N": "Native language"
+        "C2": "Proficient",
+        "N": "Native"
     },
     "DOWNLOAD_CV": "Download CV",
+    "COUNTERS": {
+        "1": "Outdoor Years",
+        "2": "Countries",
+        "3": "Excursions",
+        "4": "Qualifications"
+    },
     "PAGES": {
         "HOME": "Home",
-        "WORK_EXPERIENCE": "Work Experience",
-        "SKILLS": "Skills and Qualifications",
-        "DIARY": "Photo Diary",
-        "CONTACTS": "Contact"
+        "WORK_EXPERIENCE": "Work experience",
+        "SKILLS": "Courses and Qualifications",
+        "DIARY": "Photo diary",
+        "CONTACTS": "Contacts"
+    },
+    "HOME": {
+        "HELLO": "The mountain is not just a place: it's my way of life",
+        "HELLO_SUBTITLE": "Mountain professional with dual official qualifications (Alpine Skiing & Trekking). I offer my experience to ski schools and outdoor organizations with a clear goal: to share a passion for nature, ensure maximum safety, and create unforgettable experiences for kids and adults alike.",
+        "PLACE": "Every place leaves a mark",
+        "PLACE_SUBTITLE": "The countries highlighted on the map represent the places where I had the opportunity to work and grow. Each of them contributed to developing new skills, greater adaptability, and a more international vision of my professional journey.",
+        "MY_STORY": "My story",
+        "MY_STORY_SUBTITLE": "My story begins in Bariloche, in the heart of Argentine Patagonia, a place where mountains, nature, and sports are part of daily life. Growing up among Patagonian lakes and peaks shaped my path early on, turning a childhood passion into my profession. Over the years, I've brought my experience across the globe — from Switzerland to Japan, through Andorra, France, and Italy. Today, I am a Ski Instructor (ISIA Stamp) and Mountain Leader (TD2). My goal? To help people experience the mountains safely, whether taking their first steps on skis, exploring alpine trails, or simply learning to respect and listen to nature."
     },
     "SKILL": {
-        "TREK": "Leading daily and multi-day treks",
+        "TREK": "Leading day and multi-day treks",
         "PLAN": "Itinerary planning",
         "RISK": "Risk management in mountain environments",
         "MAP": "Navigation and cartography",
@@ -34,7 +66,93 @@
         "EM": "Emergency management"
     },
     "CONTACTS": {
-        "TITLE": "Let's build new outdoor experiences together",
-        "SUBTITLE": "Contact me for collaborations, outdoor projects and experiences in natural environments."
+        "TITLE": "Ready for the next adventure?",
+        "SUBTITLE": "Whether you are looking for an instructor for the winter season or a guide for your summer hikes, let's talk about your project!"
+    },
+    "LOCATION": {
+        "JP": "Japan",
+        "NISEKO": "Niseko",
+        "CH": "Switzerland",
+        "VERBIER": "Verbier",
+        "AD": "Andorra",
+        "GRANDVALIRA": "Grandvalira",
+        "ORDINO": "Ordino Arcalís",
+        "AG": "Argentina",
+        "BARILOCHE": "Bariloche",
+        "PT": "Portugal",
+        "PORTO": "Porto",
+        "FR": "France",
+        "ANNECY": "Annecy",
+        "SP": "Spain",
+        "POBLA": "La Pobla de Segur",
+        "IT": "Italy",
+        "PARMA": "Parma",
+        "HU": "Hungary",
+        "CZ": "Czech Republic",
+        "BUK": "Bükk",
+        "VILLANOVA": "Vila Nova de Gaia",
+        "PIRENEOS": "Pyrenees"
+    },
+    "MONTHS": {
+        "JAN": "Jan",
+        "FEB": "Feb",
+        "MAR": "Mar",
+        "APR": "Apr",
+        "MAY": "May",
+        "JUN": "Jun",
+        "JUL": "Jul",
+        "AUG": "Aug",
+        "SEP": "Sep",
+        "OCT": "Oct",
+        "NOV": "Nov",
+        "DEC": "Dec"
+    },
+    "WORK": {
+        "SKI": "Ski instructor",
+        "SKI_ENTR": "Ski coach and instructor",
+        "ENTRENADORA": "Coach and sports technician",
+        "CLIMBING": "Climbing instructor and manager",
+        "GUIDE": "Mountain guide",
+        "RECREATION": "Recreational activities and training coordinator",
+        "FACILITATOR": "Outdoor activities facilitator"
+    },
+    "WORK_DETAILS": {
+        "HR": "Staff management and human resources",
+        "RECEPTION": "Customer service and reception",
+        "CLIMBING": "Climbing instructor for adults and children",
+        "PRIV_CLASSES": "Private lesson instructor for kids and adults of all levels",
+        "U10_U12": "Coordinator and instructor for U10-U12 groups",
+        "U8_U16": "Physical preparation coordinator and coach for U8-U16 groups",
+        "Y3_Y15": "Instructor for 3–15 age group categories",
+        "OUTDOOR_GROUPS": "Activity supervision, group management, and route planning in summer camps for international schools",
+        "HOCKEY": "Strength and conditioning coach for indoor hockey",
+        "SWIMMING": "Swimming instructor for kids",
+        "NATURE": "Organization of environmental activities and nature education",
+        "HIKING": "Trekking route planning and leading day and multi-day hikes",
+        "PRE_POLLETS": "Alpine ski coach and head of Pre-Pollets category (ages 4-6)",
+        "OUTDOOR_ACTIVITIES": "Organization and leading of outdoor activities: trekking, roller skiing, MTB, climbing, and camping",
+        "Y15_Y18": "Activity leader at the Verbier Junior Orchestra summer camp for teens aged 15–18",
+        "Y3_Y6": "Activity leader at summer camp for kids aged 3–6"
+    },
+    "EDUCATION": {
+        "PROF": "Degree in Physical Education and Sports Science",
+        "SKI": "Level 3 Ski Instructor",
+        "COLEGIO": "Upper secondary school",
+        "TD2": "Mountain Leader - Level 2 (TD2)",
+        "SECONDARY": "Colegio San Patricio - High school diploma",
+        "AADIDESS": "Higher Institute of Skiing and Snowboarding (AADIDESS)",
+        "UNCO": "National University of Comahue (UNCo)",
+        "ISIA": "ISIA Stamp - International Ski Instructors Association"
+    },
+    "COURSE": {
+        "FIRST_AID_OUTDOOR": "Outdoor First Aid",
+        "AIGAE": "AIGAE: Italian Association for Environmental Hiking Guides",
+        "ICEMP": "ICEMP: Pallars Mountain Sports Centre Institute",
+        "CAG": "Avalanche Course for Guides (CAG) – Level 1",
+        "ALTO": "High Performance",
+        "ACNA": "ACNA – Association for Snow and Avalanche Knowledge",
+        "PERSONAL_TRAINER": "Qualified Personal Trainer – EQF Level 4",
+        "NUCO": "Nuco Training",
+        "TD1": "Trekking Technician – Level 1 (TD1)"
     }
 }

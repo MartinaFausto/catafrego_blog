@@ -1,0 +1,158 @@
+{
+    "LANGUAGES": "Gesprochene Sprachen",
+    "SEASONS": "Saisons",
+    "MOBILITY": "Mobilität",
+    "DOCUMENTS": "Dokumente",
+    "ACADEMIC": "Ausbildung",
+    "QUALIFICATIONS": "Qualifikationen",
+    "DEFINITION": "ISIA-Skilehrerin & Wanderführerin (TD2)",
+    "DRIVING_LICENCE": {
+        "TITLE": "Führerschein",
+        "LICENCE": "Europäische Klasse B"
+    },
+    "CITIZENSHIP": {
+        "TITLE": "Staatsangehörigkeit",
+        "DATA": "Argentinisch und Italienisch"
+    },
+    "RESIDENCE": {
+        "TITLE": "Wohnsitz",
+        "DATA": "Italien"
+    },
+    "LANGUAGE": {
+        "EN": "Englisch",
+        "ES": "Spanisch",
+        "IT": "Italienisch",
+        "DE": "Deutsch",
+        "PT": "Portugiesisch",
+        "FR": "Französisch"
+    },
+    "LANGUAGE_LEVEL": {
+        "A1": "Anfänger",
+        "A2": "Grundkenntnisse",
+        "B1": "Mittelstufe",
+        "B2": "Gute Mittelstufe",
+        "C1": "Fortgeschritten",
+        "C2": "Exzellente Kenntnisse",
+        "N": "Muttersprache"
+    },
+    "DOWNLOAD_CV": "CV herunterladen",
+    "COUNTERS": {
+        "1": "Jahre Outdoor-Erfahrung",
+        "2": "Länder",
+        "3": "Exkursionen",
+        "4": "Qualifikationen"
+    },
+    "PAGES": {
+        "HOME": "Home",
+        "WORK_EXPERIENCE": "Berufserfahrung",
+        "SKILLS": "Kurse und Qualifikationen",
+        "DIARY": "Fototagebuch",
+        "CONTACTS": "Kontakt"
+    },
+    "HOME": {
+        "HELLO": "Die Berge sind nicht nur ein Ort: Sie sind meine Lebensart",
+        "HELLO_SUBTITLE": "Bergprofi mit doppelter offizieller Qualifikation (Ski Alpin & Trekking). Ich stelle meine Erfahrung Skischulen und Outdoor-Organisationen mit einem klaren Ziel zur Verfügung: die Leidenschaft für die Natur weiterzugeben, maximale Sicherheit zu gewährleisten und unvergessliche Erlebnisse für Kinder und Erwachsene zu schaffen.",
+        "PLACE": "Jeder Ort hinterlässt Spuren",
+        "PLACE_SUBTITLE": "Die auf der Karte hervorgehobenen Länder repräsentieren die Orte, an denen ich arbeiten und wachsen durfte. Jedes dieser Länder hat dazu beigetragen, neue Fähigkeiten, eine höhere Anpassungsfähigkeit und eine internationalere Perspektive auf meinen beruflichen Weg zu entwickeln.",
+        "MY_STORY": "Meine Geschichte",
+        "MY_STORY_SUBTITLE": "Meine Geschichte beginnt in Bariloche im Herzen des argentinischen Patagoniens – ein Ort, an dem Berge, Natur und Sport zum Alltag gehören. Das Aufwachsen zwischen patagonischen Seen und Gipfeln hat meinen Weg von Anfang an geprägt und eine Leidenschaft aus der Kindheit in meinen Beruf verwandelt. Im Laufe der Jahre habe ich meine Erfahrung weltweit eingebracht — von der Schweiz bis nach Japan, über Andorra, Frankreich und Italien. Heute bin ich Skilehrerin (ISIA-Marke) und Wanderführerin (TD2). Mein Ziel? Menschen zu helfen, die Berge sicher zu erleben – sei es bei den ersten Schritten auf Skiern, beim Erkunden alpiner Pfade oder einfach beim Lernen, die Natur zu respektieren und ihr zuzuhören."
+    },
+    "SKILL": {
+        "TREK": "Führung von Tages- und Mehrtagestouren",
+        "PLAN": "Routenplanung",
+        "RISK": "Risikomanagement im alpinen Gelände",
+        "MAP": "Orientierung und Kartographie",
+        "LEADER": "Führung internationaler Gruppen",
+        "EM": "Notfallmanagement"
+    },
+    "CONTACTS": {
+        "TITLE": "Bereit für das nächste Abenteuer?",
+        "SUBTITLE": "Egal ob Sie eine Skilehrerin für die Wintersaison oder eine Wanderführerin für Ihre Sommertouren suchen: Lassen Sie uns über Ihr Projekt sprechen!"
+    },
+    "LOCATION": {
+        "JP": "Japan",
+        "NISEKO": "Niseko",
+        "CH": "Schweiz",
+        "VERBIER": "Verbier",
+        "AD": "Andorra",
+        "GRANDVALIRA": "Grandvalira",
+        "ORDINO": "Ordino Arcalís",
+        "AG": "Argentinien",
+        "BARILOCHE": "Bariloche",
+        "PT": "Portugal",
+        "PORTO": "Porto",
+        "FR": "Frankreich",
+        "ANNECY": "Annecy",
+        "SP": "Spanien",
+        "POBLA": "La Pobla de Segur",
+        "IT": "Italien",
+        "PARMA": "Parma",
+        "HU": "Ungarn",
+        "CZ": "Tschechische Republik",
+        "BUK": "Bükk",
+        "VILLANOVA": "Vila Nova de Gaia",
+        "PIRENEOS": "Pyrenäen"
+    },
+    "MONTHS": {
+        "JAN": "Jan",
+        "FEB": "Feb",
+        "MAR": "Mär",
+        "APR": "Apr",
+        "MAY": "Mai",
+        "JUN": "Jun",
+        "JUL": "Jul",
+        "AUG": "Aug",
+        "SEP": "Sep",
+        "OCT": "Okt",
+        "NOV": "Nov",
+        "DEC": "Dez"
+    },
+    "WORK": {
+        "SKI": "Skilehrerin",
+        "SKI_ENTR": "Skitrainerin und Skilehrerin",
+        "ENTRENADORA": "Trainerin und Sporttechnikerin",
+        "CLIMBING": "Kletterlehrerin und Leiterin",
+        "GUIDE": "Bergführerin / Wanderführerin",
+        "RECREATION": "Koordinatorin für Freizeitaktivitäten und Training",
+        "FACILITATOR": "Outdoor-Aktivitäten-Betreuerin"
+    },
+    "WORK_DETAILS": {
+        "HR": "Personalmanagement und Human Resources",
+        "RECEPTION": "Kundenservice und Empfang",
+        "CLIMBING": "Kletterlehrerin für Erwachsene und Kinder",
+        "PRIV_CLASSES": "Privatunterricht für Kinder und Erwachsene aller Könnerstufen",
+        "U10_U12": "Koordinatorin und Trainerin für die Kategorien U10-U12",
+        "U8_U16": "Koordinatorin und Konditionstrainerin für die Kategorien U8-U16",
+        "Y3_Y15": "Betreuerin für Altersgruppen von 3 bis 15 Jahren",
+        "OUTDOOR_GROUPS": "Aktivitätenaufsicht, Gruppenleitung und Routenplanung in Sommercamps für internationale Schulen",
+        "HOCKEY": "Konditionstrainerin für Hallenhockey",
+        "SWIMMING": "Schwimmlehrerin für Kinder",
+        "NATURE": "Organisation von Umweltaktivitäten und Naturpädagogik",
+        "HIKING": "Planung von Trekkingrouten und Durchführung von Tages- und Mehrtagestouren",
+        "PRE_POLLETS": "Ski-Alpin-Trainerin und Verantwortliche für die Kategorie Pre-Pollets (4-6 Jahre)",
+        "OUTDOOR_ACTIVITIES": "Organisation und Durchführung von Outdoor-Aktivitäten: Trekking, Rollski, MTB, Klettern und Camping",
+        "Y15_Y18": "Leiterin der Aktivitäten im Sommercamp des Verbier Junior Orchesters für Jugendliche von 15 bis 18 Jahren",
+        "Y3_Y6": "Leiterin der Aktivitäten im Sommercamp für Kinder von 3 bis 6 Jahren"
+    },
+    "EDUCATION": {
+        "PROF": "Studium der Sportwissenschaften",
+        "SKI": "Skilehrerin Level 3",
+        "COLEGIO": "Höhere Sekundarschule",
+        "TD2": "Wanderführerin - Level 2 (TD2)",
+        "SECONDARY": "Colegio San Patricio - Abitur / Matura",
+        "AADIDESS": "Höheres Institut für Ski und Snowboard (AADIDESS)",
+        "UNCO": "Nationale Universität del Comahue (UNCo)",
+        "ISIA": "ISIA-Marke - Internationaler Skilehrerverband"
+    },
+    "COURSE": {
+        "FIRST_AID_OUTDOOR": "Outdoor Erste Hilfe",
+        "AIGAE": "AIGAE: Italienischer Verband der Umwelt- und Wanderführer",
+        "ICEMP": "ICEMP: Institut Zentrum für Bergsport Pallars",
+        "CAG": "Lawinenkurs für Bergführer (CAG) – Level 1",
+        "ALTO": "Hochleistungstraining",
+        "ACNA": "ACNA – Verband für Schnee- und Lawinenkunde",
+        "PERSONAL_TRAINER": "Qualifizierte Personal Trainerin – EQF Level 4",
+        "NUCO": "Nuco Training",
+        "TD1": "Wander-Technikerin – Level 1 (TD1)"
+    }
+}

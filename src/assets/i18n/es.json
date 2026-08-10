@@ -1,5 +1,23 @@
 {
     "LANGUAGES": "Idiomas hablados",
+    "SEASONS": "Temporadas",
+    "MOBILITY": "Movilidad",
+    "DOCUMENTS": "Documentos",
+    "ACADEMIC": "Formación",
+    "QUALIFICATIONS": "Titulaciones",
+    "DEFINITION": "Instructora de Esquí ISIA y Guía de Media Montaña TD2",
+    "DRIVING_LICENCE": {
+        "TITLE": "Permiso de conducir",
+        "LICENCE": "Categoría B Europea"
+    },
+    "CITIZENSHIP": {
+        "TITLE": "Nacionalidad",
+        "DATA": "Argentina e Italiana"
+    },
+    "RESIDENCE": {
+        "TITLE": "Residencia",
+        "DATA": "Italiana"
+    },
     "LANGUAGE": {
         "EN": "Inglés",
         "ES": "Español",
@@ -14,19 +32,33 @@
         "B1": "Intermedio",
         "B2": "Intermedio alto",
         "C1": "Avanzado",
-        "C2": "Dominio del idioma",
-        "N": "Lengua materna"
+        "C2": "Dominio eficaz",
+        "N": "Nativo"
     },
     "DOWNLOAD_CV": "Descargar CV",
+    "COUNTERS": {
+        "1": "Años Outdoor",
+        "2": "Países",
+        "3": "Excursiones",
+        "4": "Titulaciones"
+    },
     "PAGES": {
         "HOME": "Inicio",
         "WORK_EXPERIENCE": "Experiencia laboral",
-        "SKILLS": "Habilidades y Cualificaciones",
+        "SKILLS": "Cursos y Titulaciones",
         "DIARY": "Diario fotográfico",
         "CONTACTS": "Contacto"
     },
+    "HOME": {
+        "HELLO": "La montaña no es solo un lugar: es mi estilo de vida",
+        "HELLO_SUBTITLE": "Profesional de la montaña con doble titulación oficial (Esquí Alpino y Senderismo). Pongo mi experiencia al servicio de escuelas de esquí y organizaciones outdoor con un objetivo claro: transmitir la pasión por la naturaleza, garantizar la máxima seguridad y crear experiencias inolvidables para jóvenes y adultos.",
+        "PLACE": "Cada lugar deja una huella",
+        "PLACE_SUBTITLE": "Los países destacados en el mapa representan los lugares donde he tenido la oportunidad de trabajar y crecer. Cada uno de ellos ha contribuido a desarrollar nuevas competencias, una mayor capacidad de adaptación y una visión más internacional de mi trayectoria profesional.",
+        "MY_STORY": "Mi historia",
+        "MY_STORY_SUBTITLE": "Mi historia comienza en Bariloche, en el corazón de la Patagonia argentina, un lugar donde la montaña, la naturaleza y el deporte forman parte del día a día. Crecer entre lagos y cumbres patagónicas marcó mi camino desde el principio, transformando una pasión de la infancia en mi profesión. A lo largo de los años he llevado mi experiencia por todo el mundo: desde Suiza hasta Japón, pasando por Andorra, Francia e Italia. Hoy soy Instructora de Esquí (ISIA Card) y Guía de Media Montaña (TD2). ¿Mi objetivo? Ayudar a las personas a disfrutar de la montaña con seguridad, ya sea dando sus primeros pasos sobre los esquís, explorando senderos alpinos o simplemente aprendiendo a respetar y escuchar la naturaleza."
+    },
     "SKILL": {
-        "TREK": "Conducción de trekkings diarios y de varios días",
+        "TREK": "Conducción de trekking de un día y varios días",
         "PLAN": "Planificación de itinerarios",
         "RISK": "Gestión del riesgo en entorno de montaña",
         "MAP": "Orientación y cartografía",
@@ -34,7 +66,93 @@
         "EM": "Gestión de emergencias"
     },
     "CONTACTS": {
-        "TITLE": "Construyamos juntos nuevas experiencias outdoor",
-        "SUBTITLE": "Contáctame para colaboraciones, proyectos outdoor y experiencias en entornos naturales."
+        "TITLE": "¿Listo para la próxima aventura?",
+        "SUBTITLE": "Tanto si buscas una instructora para la temporada de invierno como una guía para tus excursiones de verano, ¡hablemos de tu proyecto!"
+    },
+    "LOCATION": {
+        "JP": "Japón",
+        "NISEKO": "Niseko",
+        "CH": "Suiza",
+        "VERBIER": "Verbier",
+        "AD": "Andorra",
+        "GRANDVALIRA": "Grandvalira",
+        "ORDINO": "Ordino Arcalís",
+        "AG": "Argentina",
+        "BARILOCHE": "Bariloche",
+        "PT": "Portugal",
+        "PORTO": "Oporto",
+        "FR": "Francia",
+        "ANNECY": "Annecy",
+        "SP": "España",
+        "POBLA": "La Pobla de Segur",
+        "IT": "Italia",
+        "PARMA": "Parma",
+        "HU": "Hungría",
+        "CZ": "República Checa",
+        "BUK": "Bükk",
+        "VILLANOVA": "Vila Nova de Gaia",
+        "PIRENEOS": "Pirineos"
+    },
+    "MONTHS": {
+        "JAN": "Ene",
+        "FEB": "Feb",
+        "MAR": "Mar",
+        "APR": "Abr",
+        "MAY": "May",
+        "JUN": "Jun",
+        "JUL": "Jul",
+        "AUG": "Ago",
+        "SEP": "Sep",
+        "OCT": "Oct",
+        "NOV": "Nov",
+        "DEC": "Dic"
+    },
+    "WORK": {
+        "SKI": "Instructora de esquí",
+        "SKI_ENTR": "Entrenadora e instructora de esquí",
+        "ENTRENADORA": "Entrenadora y técnica deportiva",
+        "CLIMBING": "Instructora de escalada y responsable",
+        "GUIDE": "Guía de montaña",
+        "RECREATION": "Coordinadora de actividades recreativas y entrenamiento",
+        "FACILITATOR": "Facilitadora de actividades outdoor"
+    },
+    "WORK_DETAILS": {
+        "HR": "Gestión de personal y recursos humanos",
+        "RECEPTION": "Atención al cliente y recepción",
+        "CLIMBING": "Instructora de escalada para adultos y niños",
+        "PRIV_CLASSES": "Instructora de clases particulares para niños y adultos de todos los niveles",
+        "U10_U12": "Coordinadora e instructora de grupos categorías U10-U12",
+        "U8_U16": "Coordinadora y entrenadora para la preparación física de grupos categorías U8-U16",
+        "Y3_Y15": "Instructora de grupos categorías de 3 a 15 años",
+        "OUTDOOR_GROUPS": "Supervisión de actividades, gestión de grupos y planificación de itinerarios en campamentos de verano para escuelas internacionales",
+        "HOCKEY": "Preparadora física de hockey sala",
+        "SWIMMING": "Instructora de natación para niños",
+        "NATURE": "Organización de actividades ambientales y educación ambiental",
+        "HIKING": "Planificación de itinerarios de trekking y conducción de excursiones de un día y varios días",
+        "PRE_POLLETS": "Entrenadora de esquí alpino y responsable de la categoría Pre-Pollets (4-6 años)",
+        "OUTDOOR_ACTIVITIES": "Organización y conducción de actividades outdoor: trekking, roller ski, BTT, escalada y acampada",
+        "Y15_Y18": "Líder de actividades en el campamento de verano de la Orquesta Junior de Verbier para jóvenes de 15 a 18 años",
+        "Y3_Y6": "Líder de actividades en el campamento de verano para niños de 3 a 6 años"
+    },
+    "EDUCATION": {
+        "PROF": "Carrera de Ciencias de la Actividad Física y del Deporte",
+        "SKI": "Instructora de Esquí Nivel 3",
+        "COLEGIO": "Educación secundaria superior",
+        "TD2": "Guía de Media Montaña - Nivel 2 (TD2)",
+        "SECONDARY": "Colegio San Patricio - Título de educación secundaria",
+        "AADIDESS": "Instituto Superior de Esquí y Snowboard (AADIDESS)",
+        "UNCO": "Universidad Nacional del Comahue (UNCo)",
+        "ISIA": "Sello ISIA - Asociación Internacional de Profesores de Esquí"
+    },
+    "COURSE": {
+        "FIRST_AID_OUTDOOR": "Primeros Auxilios Outdoor",
+        "AIGAE": "AIGAE: Asociación Italiana de Guías Ambientales y de Senderismo",
+        "ICEMP": "ICEMP: Institut Centre d'Esports de Muntanya del Pallars",
+        "CAG": "Curso de Aludes para Guías (CAG) – Nivel 1",
+        "ALTO": "Alto Rendimiento",
+        "ACNA": "ACNA – Asociación para el Conocimiento de la Nieve y los Aludes",
+        "PERSONAL_TRAINER": "Entrenador Personal cualificado – Nivel EQF 4",
+        "NUCO": "Nuco Training",
+        "TD1": "Técnico de Senderismo – Nivel 1 (TD1)"
     }
 }
