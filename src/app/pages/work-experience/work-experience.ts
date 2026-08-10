@@ -72,6 +72,8 @@ export class WorkExperience {
             status: WORK.FACILITATOR,
             startMonth: MONTHS.SEP,
             startYear: 2024,
+            endMonth: MONTHS.SEP,
+            endYear: 2025,
             city: LOCATION.ANNECY,
             nation: LOCATION.FR,
             icon: ICONS.BIKE,
@@ -82,7 +84,8 @@ export class WorkExperience {
                     url: 'https://itsschooltrips.com/'
                 }
             ],
-            details: [WORK_DETAILS.OUTDOOR_GROUPS]
+            details: [WORK_DETAILS.OUTDOOR_GROUPS],
+            seasons: 2
         },
         {
             status: WORK.FACILITATOR,
