@@ -1,24 +1,49 @@
 p-toolbar {
-  background: rgba(255,255,255,0.10);
+  background: rgba(255, 255, 255, 0.10);
   backdrop-filter: blur(12px);
-  transition: all .3s ease;
+  transition: all 0.3s ease;
+  color: white;
 }
 
 p-toolbar.scrolled {
   background: rgba(15, 23, 42, 0.95);
-  box-shadow: 0 10px 30px rgba(0,0,0,.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  color: white;
+}
+
+.language-select {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: white !important;
+}
+
+.language-select .p-select-label {
+  background: transparent !important;
+  color: white !important;
+  padding: 0 !important;
+}
+
+.language-select .p-select-dropdown {
+  background: transparent !important;
+  border: none !important;
+  color: white !important;
+}
+
+.language-select .p-select-dropdown-icon {
+  color: white !important;
 }
 
 @keyframes slide-in {
-    from {
-        transform: translateX(100%);
-    }
+  from {
+    transform: translateX(100%);
+  }
 
-    to {
-        transform: translateX(0);
-    }
+  to {
+    transform: translateX(0);
+  }
 }
 
 .animate-slide-in {
-    animation: slide-in .3s ease-out;
+  animation: slide-in 0.3s ease-out;
 }

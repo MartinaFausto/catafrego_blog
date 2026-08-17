@@ -1,40 +1,52 @@
-import { Component, inject } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { SelectModule } from 'primeng/select';
-import { TranslateUtility } from '../../utils/translate-utility';
-import { LANGUAGE_CODES, getInitialLanguage } from '../../utils/translate-utility';
+import { Component, HostListener, inject } from '@angular/core';
+import {
+  TranslateUtility,
+  getInitialLanguage
+} from '../../utils/translate-utility';
 
 interface Language {
-  label: string;
   code: string;
 }
 
 @Component({
   selector: 'app-language-selector',
-  imports: [FormsModule, SelectModule],
+  imports: [],
   templateUrl: './language-selector.html',
   styleUrl: './language-selector.scss',
 })
-
 export class LanguageSelector {
-
   private translateUtility = inject(TranslateUtility);
 
   languages: Language[] = [
-      { code: LANGUAGE_CODES.EN, label: 'EN' },
-      { code: LANGUAGE_CODES.DE, label: 'DE' },
-      { code: LANGUAGE_CODES.ES, label: 'ES' },
-      { code: LANGUAGE_CODES.FR, label: 'FR' },
-      { code: LANGUAGE_CODES.IT, label: 'IT' },
-      { code: LANGUAGE_CODES.PT, label: 'PT' }
+    { code: 'IT' },
+    { code: 'EN' },
+    { code: 'ES' },
+    { code: 'PT' },
+    { code: 'DE' },
+    { code: 'FR' }
   ];
-  
+
   selectedLanguage: Language = this.languages.find(
-    lang => lang.code === getInitialLanguage()
+    language => language.code.toLowerCase() === getInitialLanguage().toLowerCase()
   )!;
-  
-  changeLanguage(language: Language) {
-    this.translateUtility.changeLanguage(language.code);
+
+  isOpen = false;
+
+  toggleDropdown(): void {
+    this.isOpen = !this.isOpen;
   }
 
+  changeLanguage(language: Language): void {
+    this.selectedLanguage = language;
+    this.isOpen = false;
+
+    this.translateUtility.changeLanguage(language.code.toLowerCase());
+  }
+
+  @HostListener('document:click', ['$event'])
+  closeDropdown(event: Event): void {
+    if (!(event.target as HTMLElement).closest('.language-selector')) {
+      this.isOpen = false;
+    }
+  }
 }

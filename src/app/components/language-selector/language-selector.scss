@@ -1,0 +1,65 @@
+.language-selector {
+  position: relative;
+  color: white;
+}
+
+.language-button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 6px;
+  border: none;
+  background: transparent;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+}
+
+.arrow {
+  color: white;
+  font-size: 12px;
+  transition: transform 0.2s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+.language-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 50px;
+  padding: 4px;
+  border-radius: 8px;
+  background: var(--color-accent);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .language-dropdown {
+    left: 0;
+    right: auto;
+    transform: none;
+  }
+}
+
+.language-option {
+  display: block;
+  width: 100%;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.language-option:hover,
+.language-option.active {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
