@@ -1,59 +1,66 @@
-# BlogV1
+# Catafrego Blog
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.0.7.
+A modern, responsive blog web application developed with Angular and TypeScript.
 
-## Development server
+**Live Demo:** [catafrego-blog.vercel.app](https://catafrego-blog.vercel.app/)
 
-To start a local development server, run:
+## Overview
+
+Catafrego Blog is a personal blog platform designed to provide a clean and responsive reading experience across desktop and mobile devices.
+
+The project was developed to explore modern Angular development practices, component-based architecture, responsive UI design, and production deployment.
+
+## Features
+
+- Responsive design for desktop, tablet, and mobile
+- Component-based Angular architecture
+- Blog content and article presentation
+- Client-side routing
+- Reusable UI components
+- Production-ready build
+- Deployed with Vercel
+
+## Technologies
+
+- **Angular 22**
+- **TypeScript**
+- **HTML5**
+- **CSS**
+- **Angular Router**
+- **Vitest**
+- **Vercel**
+
+## Technical Highlights
+
+### Component-Based Architecture
+
+The application is structured into reusable Angular components to keep the codebase modular, maintainable, and easy to extend.
+
+### Responsive UI
+
+The interface was designed with a responsive approach to provide a consistent experience across different screen sizes and devices.
+
+### Routing
+
+Angular Router is used to manage navigation between the different views of the application while maintaining a client-side experience.
+
+### Testing
+
+The project uses Vitest for unit testing and follows Angular's testing workflow.
+
+### Production Deployment
+
+The application is built for production using Angular's build pipeline and deployed through Vercel.
+
+## Getting Started
+
+### Prerequisites
+
+Make sure you have Node.js and npm installed.
+
+### Installation
+
+Clone the repository:
 
 ```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+git clone https://github.com/MartinaFausto/catafrego_blog.git
