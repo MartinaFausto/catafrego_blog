@@ -6,6 +6,7 @@ import { Skills } from './pages/skills/skills';
 import { PhotoDiary } from './pages/photo-diary/photo-diary';
 
 export const ROUTES = {
+  HOME: '',
   WORK_EXPERIENCE: 'work-experiences',
   CONTACTS: 'contacts',
   SKILLS: 'skills',
@@ -14,7 +15,7 @@ export const ROUTES = {
 
 export const routes: Routes = [
     {
-        path: '',
+        path: ROUTES.HOME,
         component: Home
     },
     {
@@ -32,5 +33,10 @@ export const routes: Routes = [
     {
         path: ROUTES.CONTACTS,
         component: Contacts
+    },
+    {
+        path: '**',
+        redirectTo: ROUTES.HOME,
+        pathMatch: 'full'
     }
 ];
