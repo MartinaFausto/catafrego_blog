@@ -107,6 +107,22 @@ export class Skills {
 
   cursos = [
     {
+        status: COURSE.WFR,
+        startMonth: MONTHS.NOV,
+        startYear: 2026,
+        city: LOCATION.BARILOCHE,
+        nation: LOCATION.AG,
+        icon: ICONS.HEALTH,
+        color: COLOR.SECONDARY,
+        sites: [
+            {
+                name: COURSE.EXPERTIA,
+                url: 'https://expertiacapacita.com/wilderness-first-responder/'
+            }  
+        ],
+        details: []
+    },
+    {
         status: COURSE.FIRST_AID_OUTDOOR,
         startMonth: MONTHS.APR,
         startYear: 2026,
